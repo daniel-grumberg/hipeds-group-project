@@ -1,0 +1,118 @@
+﻿<?xml version="1.0" encoding="utf-8"?><DEFECTS><DEFECT>
+    <SFA>
+      <FILEPATH>c:\program files (x86)\intel realsense sdk 2.0\include\librealsense2\hpp\</FILEPATH>
+      <FILENAME>rs_types.hpp</FILENAME>
+      <LINE>102</LINE>
+      <COLUMN>4</COLUMN>
+    </SFA>
+    <DEFECTCODE>26495</DEFECTCODE>
+    <DESCRIPTION>Variable 'rs2::error::type' is uninitialized. Always initialize a member variable (type.6).</DESCRIPTION>
+    <FUNCTION>rs2::error::{ctor}</FUNCTION>
+    <DECORATED>??0error@rs2@@QEAA@AEBV01@@Z</DECORATED>
+    <FUNCLINE>102</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT><DEFECT>
+    <SFA>
+      <FILEPATH>c:\program files (x86)\intel realsense sdk 2.0\include\librealsense2\hpp\</FILEPATH>
+      <FILENAME>rs_frame.hpp</FILENAME>
+      <LINE>198</LINE>
+      <COLUMN>4</COLUMN>
+    </SFA>
+    <DEFECTCODE>26495</DEFECTCODE>
+    <DESCRIPTION>Variable 'rs2::stream_profile::_uid' is uninitialized. Always initialize a member variable (type.6).</DESCRIPTION>
+    <FUNCTION>rs2::stream_profile::{ctor}</FUNCTION>
+    <DECORATED>??0stream_profile@rs2@@QEAA@$$QEAV01@@Z</DECORATED>
+    <FUNCLINE>198</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT><DEFECT>
+    <SFA>
+      <FILEPATH>c:\program files (x86)\intel realsense sdk 2.0\include\librealsense2\hpp\</FILEPATH>
+      <FILENAME>rs_frame.hpp</FILENAME>
+      <LINE>353</LINE>
+      <COLUMN>8</COLUMN>
+    </SFA>
+    <DEFECTCODE>26495</DEFECTCODE>
+    <DESCRIPTION>Variable 'rs2::frame::frame_ref' is uninitialized. Always initialize a member variable (type.6).</DESCRIPTION>
+    <FUNCTION>rs2::frame::{ctor}</FUNCTION>
+    <DECORATED>??0frame@rs2@@QEAA@AEBV01@@Z</DECORATED>
+    <FUNCLINE>353</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT><DEFECT>
+    <SFA>
+      <FILEPATH>c:\program files (x86)\intel realsense sdk 2.0\include\librealsense2\hpp\</FILEPATH>
+      <FILENAME>rs_sensor.hpp</FILENAME>
+      <LINE>216</LINE>
+      <COLUMN>8</COLUMN>
+    </SFA>
+    <DEFECTCODE>26495</DEFECTCODE>
+    <DESCRIPTION>Variable 'rs2::options::_options' is uninitialized. Always initialize a member variable (type.6).</DESCRIPTION>
+    <FUNCTION>rs2::options::{ctor}</FUNCTION>
+    <DECORATED>??0options@rs2@@QEAA@AEBV01@@Z</DECORATED>
+    <FUNCLINE>216</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT><DEFECT>
+    <SFA>
+      <FILEPATH>c:\program files (x86)\intel realsense sdk 2.0\include\librealsense2\hpp\</FILEPATH>
+      <FILENAME>rs_processing.hpp</FILENAME>
+      <LINE>199</LINE>
+      <COLUMN>4</COLUMN>
+    </SFA>
+    <DEFECTCODE>26495</DEFECTCODE>
+    <DESCRIPTION>Variable 'rs2::frame_queue::_capacity' is uninitialized. Always initialize a member variable (type.6).</DESCRIPTION>
+    <FUNCTION>rs2::frame_queue::{ctor}</FUNCTION>
+    <DECORATED>??0frame_queue@rs2@@QEAA@AEBV01@@Z</DECORATED>
+    <FUNCLINE>199</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT><DEFECT>
+    <SFA>
+      <FILEPATH>c:\program files (x86)\intel realsense sdk 2.0\samples\</FILEPATH>
+      <FILENAME>example.hpp</FILENAME>
+      <LINE>59</LINE>
+      <COLUMN>12</COLUMN>
+    </SFA>
+    <DEFECTCODE>6262</DEFECTCODE>
+    <DESCRIPTION>Function uses '60016' bytes of stack:  exceeds /analyze:stacksize '16384'.  Consider moving some data to heap.</DESCRIPTION>
+    <FUNCTION>draw_text</FUNCTION>
+    <DECORATED>?draw_text@@YAXHHPEBD@Z</DECORATED>
+    <FUNCLINE>59</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT><DEFECT>
+    <SFA>
+      <FILEPATH>c:\program files (x86)\intel realsense sdk 2.0\samples\</FILEPATH>
+      <FILENAME>example.hpp</FILENAME>
+      <LINE>164</LINE>
+      <COLUMN>4</COLUMN>
+    </SFA>
+    <DEFECTCODE>26495</DEFECTCODE>
+    <DESCRIPTION>Variable 'window::_cursor' is uninitialized. Always initialize a member variable (type.6).</DESCRIPTION>
+    <FUNCTION>window::{ctor}</FUNCTION>
+    <DECORATED>??0window@@QEAA@HHPEBD@Z</DECORATED>
+    <FUNCLINE>164</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT><DEFECT>
+    <SFA>
+      <FILEPATH>c:\program files (x86)\intel realsense sdk 2.0\samples\plyextraxtor\</FILEPATH>
+      <FILENAME>plyextraxtor.cpp</FILENAME>
+      <LINE>34</LINE>
+      <COLUMN>6</COLUMN>
+    </SFA>
+    <DEFECTCODE>26444</DEFECTCODE>
+    <DESCRIPTION>Avoid unnamed objects with custom construction and destruction (es.84).</DESCRIPTION>
+    <FUNCTION>main</FUNCTION>
+    <DECORATED>main</DECORATED>
+    <FUNCLINE>14</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT><DEFECT>
+    <SFA>
+      <FILEPATH>c:\program files (x86)\intel realsense sdk 2.0\samples\plyextraxtor\</FILEPATH>
+      <FILENAME>plyextraxtor.cpp</FILENAME>
+      <LINE>28</LINE>
+      <COLUMN>5</COLUMN>
+    </SFA>
+    <DEFECTCODE>26444</DEFECTCODE>
+    <DESCRIPTION>Avoid unnamed objects with custom construction and destruction (es.84).</DESCRIPTION>
+    <FUNCTION>main</FUNCTION>
+    <DECORATED>main</DECORATED>
+    <FUNCLINE>14</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT></DEFECTS>
