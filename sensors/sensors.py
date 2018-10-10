@@ -27,7 +27,6 @@ class AddressBus:
 class DepthSensor:
     GPIO_TRIGGER = 0
     GPIO_ECHO = 0
-    address_bus = []
 
     @classmethod
     def init_gpio_pins(cls):
@@ -66,14 +65,9 @@ class DepthSensor:
         return distance
 
 if __name__ == '__main__':
-    class DummyAddressBus:
-        def is_valid_index(idx):
-            return True
-
     try:
         DepthSensor.GPIO_TRIGGER = 23
-        DepthSensor.GPIO_ECHO = 23
-        DepthSensor.address_bus = DummyAddressBus()
+        DepthSensor.GPIO_ECHO = 24
 
         DepthSensor.init_gpio_pins()
 
@@ -86,4 +80,4 @@ if __name__ == '__main__':
         # Reset by pressing CTRL + C
     except KeyboardInterrupt:
         print("Measurement stopped by User")
-        GPIO.cleanup() 
+        GPIO.cleanup()
