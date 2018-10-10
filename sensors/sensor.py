@@ -14,6 +14,16 @@ class AddressBus:
 
     def is_valid_index(self, idx):
         return (0 <= idx) and (idx.bit_length() <= self.address_bits)
+
+    def select_index(self, idx):
+        set_bits = [ (idx >> i) & 1 for i in range(self.address_bits) ]
+        for pin, value in zip(self.pins, set_bits):
+            GPIO.output(pin, bool(value))
+
+    def clear(self):
+        for pin in self.pins:
+            GPIO.output(pin, False)
+
 class DepthSensor:
     GPIO_TRIGGER = 0
     GPIO_ECHO = 0
