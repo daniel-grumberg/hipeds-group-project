@@ -3,6 +3,17 @@
 import RPi.GPIO as GPIO
 import time
 
+GPIO.setmode(GPIO.BCM)
+
+class AddressBus:
+    def __init__(self, pins):
+        self.pins = pins
+        self.address_bits = len(pins)
+        for pin in self.bits:
+            GPIO.setup(pin, GPIO.OUT)
+
+    def is_valid_index(self, idx):
+        return (0 <= idx) and (idx.bit_length() <= self.address_bits)
 class DepthSensor:
     GPIO_TRIGGER = 0
     GPIO_ECHO = 0
@@ -10,8 +21,6 @@ class DepthSensor:
 
     @classmethod
     def init_gpio_pins(cls):
-        GPIO.setmode(GPIO.BCM)
-        #set GPIO direction (IN / OUT)
         GPIO.setup(cls.GPIO_TRIGGER, GPIO.OUT)
         GPIO.setup(cls.GPIO_ECHO, GPIO.IN)
 
