@@ -39,14 +39,22 @@ def train():
 	return clf
 
 
-# EXAMPLE (Estimate volume based on predict measurements)
 clf = train()
-# predict is an independent variable for which we'd like to predict the value
-predict = np.array([[73.9351034164,  92.4699902534, 99.4169950485, 65.8227682114,  68.4110283852, 79.9007773399,  56.1321258545,  65.0131702423,  60.6094479561, 44.2130446434, 34.6246242523,  65.8391237259,  73.8983035088,  50.710272789, 57.6940774918]]) # Should be 0.40434
-predict_ = poly.fit_transform(predict)
-#print(predict.shape)
-print("Predicting volume...")
-print(clf.predict(predict_))
+
+def estimate(measurements):
+	# predict is an independent variable for which we'd like to predict the value
+	#predict = np.array([[73.9351034164,  92.4699902534, 99.4169950485, 65.8227682114,  68.4110283852, 79.9007773399,  56.1321258545,  65.0131702423,  60.6094479561, 44.2130446434, 34.6246242523,  65.8391237259,  73.8983035088,  50.710272789, 57.6940774918]]) # Should be 0.40434
+	predict_ = poly.fit_transform(measurements)
+	#print(predict.shape)
+	print("Predicting volume...")
+	volume = clf.predict(predict_)
+	print(volume)
+	return volume
+
+	
+# ESTIMATE VOLUME
+measurements = np.array([[73.9351034164,  92.4699902534, 99.4169950485, 65.8227682114,  68.4110283852, 79.9007773399,  56.1321258545,  65.0131702423,  60.6094479561, 44.2130446434, 34.6246242523,  65.8391237259,  73.8983035088,  50.710272789, 57.6940774918]]) # Should be 0.40434
+estimate(measurements)
 
 # [[0.50243809]] with 2 degrees = 21.6% error, 0.1m^3
 # [[0.46493694]] with 3 degrees = 13.9419% error, 0.06m^3
