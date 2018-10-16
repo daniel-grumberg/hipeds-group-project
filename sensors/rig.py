@@ -1,7 +1,9 @@
 #! /usr/bin/python
 
+import argparse as argp
 import sensors
 import time
+import json
 
 def compute_free_space(measurements, w, d, h):
     van_volume = w * d * h
@@ -23,6 +25,10 @@ def init_depth_sensors():
     sensors.DepthSensor.init_gpio_pins()
 
 if __name__ == "__main__":
+    arg_parser = argp.ArgumentParser()
+    arg_parser.add_argument("-f", "--file", type=argp.FileType('w'))
+    args = arg_parser.parse_args()
+
     try:
         init_depth_sensors()
         bus = sensors.AddressBus([25, 8, 7, 1], 12)
@@ -41,9 +47,15 @@ if __name__ == "__main__":
                 measurements.append(value)
                 print "Sensor #{0} measured: {1}".format(sensor_map[s.index], value)
             compute_free_space(measurements, 100, 180, 105)
+            if args.file != None:
+                args.file.truncate(0)
+                args.file.seek(0)
+                json.dump(measurements, args.file)
             time.sleep(5)
 
     except KeyboardInterrupt:
         print "Measurement stopped by user"
         bus.clear()
         sensors.GPIO.cleanup()
+        if args.file != None:
+            args.file.close()
