@@ -24,10 +24,10 @@ tic
 fprintf('\n *** Reading ply file .');
 
 % Model names as of Intel Real Sense camera
-model0 = 'out_ply_0';
-model1 = 'out_ply_1';
-model2 = 'out_ply_2';
-model3 = 'out_ply_3';
+model0 = '40_0';
+model1 = '40_1';
+model2 = '40_2';
+model3 = '40_3';
 
 model_filename0 = strcat(model0, '.ply');
 [~, PTS, ~, ~] = plyread(model_filename0, 'face');
@@ -58,15 +58,52 @@ pcshow(pc3);
 fprintf(' *** Reading ply file \n');
 
 %% Point cloud denoising
-
+close all;
 nn = 30;
-thres = 0.4;
+thres = 0.5;
 fprintf('\n *** Denoising...');
 
-pc0 = pcdenoise(pc0, 'NumNeighbors', nn, 'Threshold', thres);
-pc1 = pcdenoise(pc1, 'NumNeighbors', nn, 'Threshold', thres);
-pc2 = pcdenoise(pc2, 'NumNeighbors', nn, 'Threshold', thres);
-pc3 = pcdenoise(pc3, 'NumNeighbors', nn, 'Threshold', thres);
+XYZ = pc0.Location;
+XYZ((XYZ(:,1)< -0.5),:) = [];
+XYZ((XYZ(:,2)< -0.7),:) = [];
+XYZ((XYZ(:,3)> 2.5),:) = [];
+pc0 = pointCloud(XYZ);
+
+
+XYZ = pc1.Location;
+XYZ((XYZ(:,1)< -0.5),:) = [];
+XYZ((XYZ(:,2)< -0.7),:) = [];
+XYZ((XYZ(:,3)> 2.5),:) = [];
+pc1 = pointCloud(XYZ);
+
+XYZ = pc2.Location;
+XYZ((XYZ(:,1)< -0.5),:) = [];
+XYZ((XYZ(:,2)< -0.7),:) = [];
+XYZ((XYZ(:,3)> 2.5),:) = [];
+pc2 = pointCloud(XYZ);
+
+XYZ = pc3.Location;
+XYZ((XYZ(:,1)< -0.5),:) = [];
+XYZ((XYZ(:,2)< -0.7),:) = [];
+XYZ((XYZ(:,3)> 2.5),:) = [];
+pc3 = pointCloud(XYZ);
+%pc1 = pcdenoise(pc1, 'NumNeighbors', nn, 'Threshold', thres);
+%pc1 = pcdenoise(pc1, 'NumNeighbors', nn, 'Threshold', thres);
+%pc2 = pcdenoise(pc2, 'NumNeighbors', nn, 'Threshold', thres);
+%pc3 = pcdenoise(pc3, 'NumNeighbors', nn, 'Threshold', thres);
+
+figure
+pcshow(pc0);
+figure
+pcshow(pc1);
+figure
+pcshow(pc2);
+figure
+pcshow(pc3);
+
+
+
+
 
 fprintf(' ...DONE*** \n');
 
@@ -114,8 +151,14 @@ fprintf(' ...DONE*** \n');
 
 %% 
 fprintf('\n *** Denoise final .ply ...');
+XYZ = ptCloudScene0123.Location;
+XYZ((XYZ(:,1)< -0.6),:) = [];
+XYZ((XYZ(:,2)< -0.75),:) = [];
+XYZ((XYZ(:,3)> 2.5),:) = [];
 
-ptCloudScene0123 = pcdenoise(ptCloudScene0123, 'NumNeighbors', 100, 'Threshold', thres);
+ptCloudScene0123 = pointCloud(XYZ);
+%ptCloudScene0123.Location(ptCloudScene0123.Location(:,1)<0.5)=[];
+%ptCloudScene0123 = pcdenoise(ptCloudScene0123, 'NumNeighbors', 30, 'Threshold', 2*thres);
 fprintf(' ...DONE*** \n');
 
 %% Visualize the input images.
@@ -130,7 +173,7 @@ pcshow(ptCloudScene23);
 title('Second input point cloud')
 drawnow
 
-%% Visualize the world scene.
+% Visualize the world scene.
 subplot(2, 2, [2, 4])
 pcshow(ptCloudScene0123, 'VerticalAxis', 'Y', 'VerticalAxisDir', 'Down')
 title('Merged point cloud scene')
@@ -154,7 +197,7 @@ fprintf(' ... DONE \n');
 
 %% Reconstruct surface
 
-pt_sampled = pcdownsample(ptCloudScene0123, 'gridAverage', 0.1)
+%pt_sampled = pcdownsample(ptCloudScene0123, 'gridAverage', 0.1)
 %
 
 %[t]=MyCrustOpen(pt_sampled.Location);
