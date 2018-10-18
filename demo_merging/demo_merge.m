@@ -23,7 +23,7 @@ addpath('.');
 display = 1; % Boolean for display images of plys
 
 %% READ PLY FILES
-tic
+
 fprintf('\n *** Reading ply file .');
 
 % Model names as of Intel Real Sense camera
@@ -43,15 +43,6 @@ close all;
 %nn = 30;
 %thres = 0.5;
 fprintf('\n *** Denoising...');
-
-xl = -0.5;
-xh = 0.6;
-yl = -0.7;
-yh = 0.25;
-zl = 0;
-zh = 2.5;
-
-
 
 [ pc0 ] = hard_denoise( pc0 );
 [ pc1 ] = hard_denoise( pc1 );
@@ -78,7 +69,6 @@ mergeSize = 0.015;
 
 fprintf('\n *** Merging 1...');% Merge 0-1
 
-
 fixed = pcdownsample(pc0, 'gridAverage', gridSize);
 moving = pcdownsample(pc1, 'gridAverage', gridSize);
 tform = pcregrigid(moving, fixed, 'Metric', 'pointToPlane', 'Extrapolate', true);
@@ -97,7 +87,6 @@ ptCloudScene23 = pcmerge(pc2, ptCloudAligned, mergeSize);
 fprintf(' ...DONE*** \n');
 
 %% Merge 01 - 23
-
 close all;
 drawnow;
 
@@ -136,27 +125,25 @@ ylabel('Y (m)')
 zlabel('Z (m)')
 drawnow
 
-DATA.vertex.x = ptCloudScene0123.Location(:, 1); % coordinate of normal, [Nx1] real array%
-DATA.vertex.y = ptCloudScene0123.Location(:, 2); % coordinate of normal, [Nx1] real array
-DATA.vertex.z = ptCloudScene0123.Location(:, 3);
+DATA.vertex.x = ptCloudScene0123.Location(:, 1); % coordinate of normal, [Nx1] real array - x
+DATA.vertex.y = ptCloudScene0123.Location(:, 2); % coordinate of normal, [Nx1] real array - y
+DATA.vertex.z = ptCloudScene0123.Location(:, 3); % coordinate of normal, [Nx1] real array - z
 x = DATA.vertex.x;
 y = DATA.vertex.y;
 z = DATA.vertex.z;
 
-%%
-fprintf('\n *** Writing ply file .');
+%% Export to ply
+% fprintf('\n *** Writing ply file .');
+% ply_write(DATA, 'output_data/merged.ply', 'binary_big_endian');
+% fprintf(' ... DONE \n');
 
-%ply_write(DATA, 'output_data/merged.ply', 'binary_big_endian');
-fprintf(' ... DONE \n');
-
-%% Reconstruct surface
-
+%% Normalize 
 xadj = x - min(x);
 yadj = y - min(y);
 zadj = z - min(z);
 
-F2 = scatteredInterpolant(x, y, zadj);
-q1 = quad2d(@(x, y) F2(x, y), min(x), max(x), min(y), max(y), 'AbsTol', 0.01);
+F2 = scatteredInterpolant(x, y, zadj); % Interpolate
+q1 = quad2d(@(x, y) F2(x, y), min(x), max(x), min(y), max(y), 'AbsTol', 0.01); % Integrate
 toc;
 %%
 tv = 2.; % Total Volume
@@ -165,3 +152,9 @@ fprintf('\n Occupied space is (percentage) : %f', (tv-q1)/tv );
 
 fprintf('\n End of execution \n');
 
+
+
+%% Imperial College London
+% HiPEDS PhD students
+% October 2018
+% In partnership with Royal Mail
