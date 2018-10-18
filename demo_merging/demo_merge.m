@@ -1,10 +1,11 @@
 %% HiPEDS Group Project 2018
 % A naive script for reading ply files, denoise and merge
-%
+% Purpose of this script is the volume calculation of 3d area
+% scanned from an IntelReal Sense Camera
 % TODO : PARAMETRIZATION 
 %
-%
-% 11/10/18
+% 
+% Last upd 18/10/18
 %
 
 %% CLEAR ALL
