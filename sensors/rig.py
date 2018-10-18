@@ -37,7 +37,9 @@ if __name__ == "__main__":
         for idx in range(1 << bus.address_bits):
             depth_sensors.append(sensors.DepthSensor(idx))
 
-        while True:
+        all_measurements = []
+        #while True:
+        for i in range(10):
             measurements = []
             for s in depth_sensors:
                 if s.index == 11:
@@ -47,10 +49,11 @@ if __name__ == "__main__":
                 measurements.append(value)
                 print "Sensor #{0} measured: {1}".format(sensor_map[s.index], value)
             compute_free_space(measurements, 100, 180, 105)
+            all_measurements.append(measurements)
             if args.file != None:
                 args.file.truncate(0)
                 args.file.seek(0)
-                json.dump(measurements, args.file)
+                json.dump(all_measurements, args.file)
             time.sleep(5)
 
     except KeyboardInterrupt:
