@@ -1,5 +1,10 @@
 function [ pc ] = hard_denoise( pc )
 
+% Denoise point cloud according to
+% naive limits. These limits are subject ot change.
+% Input : point cloud object
+% Output : point cloud object
+
 xl = -0.5;
 xh = 0.6;
 yl = -0.7;
