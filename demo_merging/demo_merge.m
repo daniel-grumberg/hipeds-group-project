@@ -9,28 +9,21 @@
 
 %% CLEAR ALL
 
-clear all;
-close all; clc;
+clear; close all; clc;
 fprintf('\n *** Starting %s ... ***  \n', mfilename);
 
 rmpath(genpath('input_data')); % Remove Path of pic plys
 addpath('input_data/10/10_1/10_1_2'); % Add only experiment path
-
-
 addpath('output_data/');
-addpath('Power-Crust-MATLAB-master/');
 addpath('./');
 addpath('.');
 
 
-
-display = 1;
+display = 1; % Boolean for display images of plys
 
 %% READ PLY FILES
 tic
 fprintf('\n *** Reading ply file .');
-
-cd
 
 % Model names as of Intel Real Sense camera
 model0 = 'pic_0';
@@ -44,40 +37,10 @@ model3 = 'pic_3';
 [pc2]=loop_read(model2);
 [pc3]=loop_read(model3);
 
-%{
-model_filename0 = strcat(model0, '.ply');
-[~, PTS, ~, ~] = plyread(model_filename0, 'face');
-pc0 = pointCloud(PTS);
-figure
-pcshow(pc0);
-fprintf('*** Reading ply file \n');
-
-model_filename1 = strcat(model1, '.ply');
-[~, PTS, ~, ~] = plyread(model_filename1, 'face');
-pc1 = pointCloud(PTS);
-figure
-pcshow(pc1);
-fprintf(' *** Reading ply file \n');
-
-model_filename2 = strcat(model2, '.ply');
-[~, PTS, ~, ~] = plyread(model_filename2, 'face');
-pc2 = pointCloud(PTS);
-figure
-pcshow(pc2);
-fprintf(' *** Reading ply file \n');
-
-model_filename3 = strcat(model3, '.ply');
-[~, PTS, ~, ~] = plyread(model_filename3, 'face');
-pc3 = pointCloud(PTS);
-figure
-pcshow(pc3);
-fprintf(' *** Reading ply file \n');
-%}
-
 %% Point cloud denoising
 close all;
-nn = 30;
-thres = 0.5;
+%nn = 30;
+%thres = 0.5;
 fprintf('\n *** Denoising...');
 
 xl = -0.5;
@@ -186,23 +149,6 @@ fprintf('\n *** Writing ply file .');
 fprintf(' ... DONE \n');
 
 %% Reconstruct surface
-%{
-%pt_sampled = pcdownsample(ptCloudScene0123, 'gridAverage', 0.1)
-%
-
-%[t]=MyCrustOpen(pt_sampled.Location);
-
-%figure
-%trisurf(t,pt_sampled.Location(:,1),pt_sampled.Location(:,2),pt_sampled.Location(:,3)); hold on;
-
-%%
-
-%[volume,area] = triangulationVolume(t,pt_sampled.Location(:,1),pt_sampled.Location(:,2),pt_sampled.Location(:,3));
-%[TriIdx, V] = convhull(pt_sampled.Location(:,1),pt_sampled.Location(:,2),pt_sampled.Location(:,3),'simplify', true)
-%trisurf(TriIdx, pt_sampled.Location(:,1),pt_sampled.Location(:,2),pt_sampled.Location(:,3));hold on;
-%tic;[rotmat,cornerpoints,volume,surface] = minboundbox(pt_sampled.Location(:,1),pt_sampled.Location(:,2),pt_sampled.Location(:,3),'v',3);toc
-%plotminbox(cornerpoints,'b');
-%}
 
 xadj = x - min(x);
 yadj = y - min(y);
