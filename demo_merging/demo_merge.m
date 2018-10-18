@@ -12,23 +12,39 @@
 clear all;
 close all; clc;
 fprintf('\n *** Starting %s ... ***  \n', mfilename);
-addpath('input_data/');
+
+rmpath(genpath('input_data')); % Remove Path of pic plys
+addpath('input_data/10/10_1/10_1_3'); % Add only experiment path
+
+
 addpath('output_data/');
 addpath('Power-Crust-MATLAB-master/');
-
 addpath('./');
 addpath('.');
+
+
+
+display = 1;
 
 %% READ PLY FILES
 tic
 fprintf('\n *** Reading ply file .');
 
-% Model names as of Intel Real Sense camera
-model0 = '40_0';
-model1 = '40_1';
-model2 = '40_2';
-model3 = '40_3';
+cd
 
+% Model names as of Intel Real Sense camera
+model0 = 'pic_0';
+model1 = 'pic_1';
+model2 = 'pic_2';
+model3 = 'pic_3';
+
+
+[pc0]=loop_read(model0);
+[pc1]=loop_read(model1);
+[pc2]=loop_read(model2);
+[pc3]=loop_read(model3);
+
+%{
 model_filename0 = strcat(model0, '.ply');
 [~, PTS, ~, ~] = plyread(model_filename0, 'face');
 pc0 = pointCloud(PTS);
@@ -56,6 +72,7 @@ pc3 = pointCloud(PTS);
 figure
 pcshow(pc3);
 fprintf(' *** Reading ply file \n');
+%}
 
 %% Point cloud denoising
 close all;
@@ -63,35 +80,21 @@ nn = 30;
 thres = 0.5;
 fprintf('\n *** Denoising...');
 
-XYZ = pc0.Location;
-XYZ((XYZ(:,1)< -0.5),:) = [];
-XYZ((XYZ(:,2)< -0.7),:) = [];
-XYZ((XYZ(:,3)> 2.5),:) = [];
-pc0 = pointCloud(XYZ);
+xl = -0.5;
+xh = 0.6;
+yl = -0.7;
+yh = 0.25;
+zl = 0;
+zh = 2.5;
 
 
-XYZ = pc1.Location;
-XYZ((XYZ(:,1)< -0.5),:) = [];
-XYZ((XYZ(:,2)< -0.7),:) = [];
-XYZ((XYZ(:,3)> 2.5),:) = [];
-pc1 = pointCloud(XYZ);
 
-XYZ = pc2.Location;
-XYZ((XYZ(:,1)< -0.5),:) = [];
-XYZ((XYZ(:,2)< -0.7),:) = [];
-XYZ((XYZ(:,3)> 2.5),:) = [];
-pc2 = pointCloud(XYZ);
+[ pc0 ] = hard_denoise( pc0 );
+[ pc1 ] = hard_denoise( pc1 );
+[ pc2 ] = hard_denoise( pc2 );
+[ pc3 ] = hard_denoise( pc3 );
 
-XYZ = pc3.Location;
-XYZ((XYZ(:,1)< -0.5),:) = [];
-XYZ((XYZ(:,2)< -0.7),:) = [];
-XYZ((XYZ(:,3)> 2.5),:) = [];
-pc3 = pointCloud(XYZ);
-%pc1 = pcdenoise(pc1, 'NumNeighbors', nn, 'Threshold', thres);
-%pc1 = pcdenoise(pc1, 'NumNeighbors', nn, 'Threshold', thres);
-%pc2 = pcdenoise(pc2, 'NumNeighbors', nn, 'Threshold', thres);
-%pc3 = pcdenoise(pc3, 'NumNeighbors', nn, 'Threshold', thres);
-
+if(display)
 figure
 pcshow(pc0);
 figure
@@ -100,10 +103,7 @@ figure
 pcshow(pc2);
 figure
 pcshow(pc3);
-
-
-
-
+end
 
 fprintf(' ...DONE*** \n');
 
@@ -112,8 +112,8 @@ fprintf(' ...DONE*** \n');
 gridSize = 0.01;
 mergeSize = 0.015;
 
-% Merge 0-1
-fprintf('\n *** Merging 1...');
+fprintf('\n *** Merging 1...');% Merge 0-1
+
 
 fixed = pcdownsample(pc0, 'gridAverage', gridSize);
 moving = pcdownsample(pc1, 'gridAverage', gridSize);
@@ -123,9 +123,7 @@ ptCloudAligned = pctransform(pc1, tform);
 ptCloudScene01 = pcmerge(pc0, ptCloudAligned, mergeSize);
 fprintf(' ...DONE*** \n');
 
-fprintf('\n *** Merging 2...');
-
-% Merge 2-3
+fprintf('\n *** Merging 2...'); % Merge 2-3
 fixed = pcdownsample(pc2, 'gridAverage', gridSize);
 moving = pcdownsample(pc3, 'gridAverage', gridSize);
 tform = pcregrigid(moving, fixed, 'Metric', 'pointToPlane', 'Extrapolate', true);
@@ -140,7 +138,6 @@ close all;
 drawnow;
 
 fprintf('\n *** Merging 3...');
-
 fixed = pcdownsample(ptCloudScene01, 'gridAverage', gridSize);
 moving = pcdownsample(ptCloudScene23, 'gridAverage', gridSize);
 tform = pcregrigid(moving, fixed, 'Metric', 'pointToPlane', 'Extrapolate', true);
@@ -151,14 +148,7 @@ fprintf(' ...DONE*** \n');
 
 %% 
 fprintf('\n *** Denoise final .ply ...');
-XYZ = ptCloudScene0123.Location;
-XYZ((XYZ(:,1)< -0.6),:) = [];
-XYZ((XYZ(:,2)< -0.75),:) = [];
-XYZ((XYZ(:,3)> 2.5),:) = [];
-
-ptCloudScene0123 = pointCloud(XYZ);
-%ptCloudScene0123.Location(ptCloudScene0123.Location(:,1)<0.5)=[];
-%ptCloudScene0123 = pcdenoise(ptCloudScene0123, 'NumNeighbors', 30, 'Threshold', 2*thres);
+[ ptCloudScene0123 ] = hard_denoise( ptCloudScene0123);
 fprintf(' ...DONE*** \n');
 
 %% Visualize the input images.
@@ -183,7 +173,7 @@ zlabel('Z (m)')
 drawnow
 
 DATA.vertex.x = ptCloudScene0123.Location(:, 1); % coordinate of normal, [Nx1] real array%
-DATA.vertex.y = ptCloudScene0123.Location(:, 2); %coordinate of normal, [Nx1] real array
+DATA.vertex.y = ptCloudScene0123.Location(:, 2); % coordinate of normal, [Nx1] real array
 DATA.vertex.z = ptCloudScene0123.Location(:, 3);
 x = DATA.vertex.x;
 y = DATA.vertex.y;
@@ -192,11 +182,11 @@ z = DATA.vertex.z;
 %%
 fprintf('\n *** Writing ply file .');
 
-ply_write(DATA, 'output_data/merged.ply', 'binary_big_endian');
+%ply_write(DATA, 'output_data/merged.ply', 'binary_big_endian');
 fprintf(' ... DONE \n');
 
 %% Reconstruct surface
-
+%{
 %pt_sampled = pcdownsample(ptCloudScene0123, 'gridAverage', 0.1)
 %
 
@@ -212,20 +202,19 @@ fprintf(' ... DONE \n');
 %trisurf(TriIdx, pt_sampled.Location(:,1),pt_sampled.Location(:,2),pt_sampled.Location(:,3));hold on;
 %tic;[rotmat,cornerpoints,volume,surface] = minboundbox(pt_sampled.Location(:,1),pt_sampled.Location(:,2),pt_sampled.Location(:,3),'v',3);toc
 %plotminbox(cornerpoints,'b');
+%}
 
 xadj = x - min(x);
 yadj = y - min(y);
 zadj = z - min(z);
 
-%f = fit([x, y], zadj, 'linearinterp');
-%q2 = quad2d(f,-0.55,0.55,0.3,2.1,'AbsTol',0.001)
-
 F2 = scatteredInterpolant(x, y, zadj);
-q1 = quad2d(@(x, y) F2(x, y), min(x), max(x), min(y), max(y), 'AbsTol', 0.1);
+q1 = quad2d(@(x, y) F2(x, y), min(x), max(x), min(y), max(y), 'AbsTol', 0.01);
 toc;
 %%
-fprintf('\n Free space is: %f', q1);
-fprintf('\n Occupied space is: %f', 2- q1);
+tv = 2.; % Total Volume
+%fprintf('\n Free space is: %f', q1);
+fprintf('\n Occupied space is (percentage) : %f', (tv-q1)/tv );
 
 fprintf('\n End of execution \n');
 
