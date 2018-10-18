@@ -20,11 +20,14 @@ addpath('./');
 addpath('.');
 
 
+%% Parameters
+
+gridSize = 0.01;
+mergeSize = 0.015;
+tv = 2.; % Total Volume
 display = 1; % Boolean for display images of plys
 
-%% READ PLY FILES
 
-fprintf('\n *** Reading ply file .');
 
 % Model names as of Intel Real Sense camera
 model0 = 'pic_0';
@@ -32,6 +35,9 @@ model1 = 'pic_1';
 model2 = 'pic_2';
 model3 = 'pic_3';
 
+%% READ PLY FILES
+
+fprintf('\n *** Reading ply file .');
 
 [pc0]=loop_read(model0);
 [pc1]=loop_read(model1);
@@ -40,8 +46,7 @@ model3 = 'pic_3';
 
 %% Point cloud denoising
 close all;
-%nn = 30;
-%thres = 0.5;
+
 fprintf('\n *** Denoising...');
 
 [ pc0 ] = hard_denoise( pc0 );
@@ -64,8 +69,6 @@ fprintf(' ...DONE*** \n');
 
 %% Merging
 
-gridSize = 0.01;
-mergeSize = 0.015;
 
 fprintf('\n *** Merging 1...');% Merge 0-1
 
@@ -146,7 +149,7 @@ F2 = scatteredInterpolant(x, y, zadj); % Interpolate
 q1 = quad2d(@(x, y) F2(x, y), min(x), max(x), min(y), max(y), 'AbsTol', 0.01); % Integrate
 toc;
 %%
-tv = 2.; % Total Volume
+
 %fprintf('\n Free space is: %f', q1);
 fprintf('\n Occupied space is (percentage) : %f', (tv-q1)/tv );
 
