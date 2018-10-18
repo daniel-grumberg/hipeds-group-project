@@ -14,7 +14,7 @@ close all; clc;
 fprintf('\n *** Starting %s ... ***  \n', mfilename);
 
 rmpath(genpath('input_data')); % Remove Path of pic plys
-addpath('input_data/10/10_1/10_1_3'); % Add only experiment path
+addpath('input_data/10/10_1/10_1_2'); % Add only experiment path
 
 
 addpath('output_data/');
