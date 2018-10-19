@@ -9,4 +9,4 @@ One is the base value, and it makes the column take on that multiple of width. D
 You can go to column=2 in the headerbox if you like for a third column. It should be self-explanatory looking at the TeX code.
 
 
-Just open a terminal on makefile level and type "make".
+%%Just open a terminal on makefile level and type "make".
