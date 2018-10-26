@@ -87,9 +87,10 @@
 
 \author{\textbf{HiPEDS 2018 Cohort:} G. Bisbas, L. Castiglione, D. Grumberg, S. Karolčík, L. Keeble, D. Kulon, B. Kwan, C. McMeel, R. Miles, J. Ortiz, N. Perez-Nieves, V. Pham Ngoc, J. Vandebon, D. Vink} % Your name
 \institute[Imperial College London] % Your institution as it will appear on the bottom of every slide, may be shorthand to save space
-{ Imperial College London \\ % Your institution for the title page
+{ Imperial College London \\add logos % Your institution for the title page
 \medskip % Your email address
 }
+
 \date{\today} % Date, can be changed to a custom date
 
 
@@ -148,11 +149,11 @@
 %------------------------------------------------
  % Sections can be created in order to organize your presentation into discrete blocks, all sections and subsections are automatically printed in the table of contents as an overview of the talk
 %------------------------------------------------
-\begin{figure}	
-	\includegraphics[width=0.8\textwidth]{Figures/PID.png}
-	\caption{PID controller}
-	\label{pid}
-\end{figure}
+%\begin{figure}	
+%	\includegraphics[width=0.8\textwidth]{Figures/PID.png}
+%	\caption{PID controller}
+%	\label{pid}
+%\end{figure}
 
 \begin{itemize}
 	\item
@@ -177,85 +178,62 @@
 
 \end{frame}
 
-\begin{frame}{PID tuning}
-Adjustment of its control parameters (gain/proportional band, integral gain/reset, derivative gain/rate) to optimum values for a target response. Tuning is part of loop design, usually required if the system oscillates too much, responds too slowly, has steady-state error, or is unstable.\\
-Another is known as the Ziegler-Nichols method, introduced by John G. Ziegler and Nathaniel B. Nichols of Taylor Instruments in 1942. This technique also involves setting I and D gains to zero and then increasing P gain until the loop output starts to oscillate. \\
-In fact, most industrial facilities no longer tune loops with manual calculation, but use tuning and loop optimization software.  The only drawbacks: Software is somewhat costly and involves some training.\\
-The analytical approach involves mathematics. \\
-One can also tune by feel, which is an online method that doesn't require math. The main problem with this method is that it is erratic, not repeatable, and can be inefficient.\\
-\end{frame}
+\begin{frame}{Denoising the point cloud}
 
 
-\begin{frame}{PID tuning}
-The final method of tuning is a quality process model called the Cohen-Coon, which is a modified version of the Ziegler-Nichols approach. This offline method involves some math, but is only good for the first-order process.
 
-We can use this:
-https://www.machinedesign.com/sensors/introduction-pid-control
+
+
+
+
+
+
 
 
 \end{frame}
 
 
-
-\begin{frame}{Embedded PID Animation}
-  \animategraphics[loop,controls,width=\linewidth]{30}{Figures/PID_animated-}{1}{248}
-\end{frame}
+\begin{frame}{The ICP algorithm}
 
 
-\begin{frame}{Embedded PID Animation}
 
-\end{frame}
 
-\begin{frame}{Linear Quadratic Regulator - Introduction}
-Introduction
 
-The Linear Quadratic Regulator (LQR) is a well-known method that provides optimally controlled feedback gains to enable the closed-loop stable and high performance design of systems.
+
+
+
+
+
 
 \end{frame}
 
-\begin{frame}{The problem}
 
-\end{frame}
+\begin{frame}{Curve fitting with Linear Interpolation}
 
-\begin{frame}{LQR solution via Dynamic Programming}
 
-\end{frame}
 
-\begin{frame}{Solution}
-
-\end{frame}
-
-\begin{frame}{Extension I: for Non-Linear Systems}
-
-\end{frame}
-
-\begin{frame}{Extension II: Penalize for change in Control Inputs}
 
 \end{frame}
 
 
 
-
-
-\begin{frame}{Gradient Method Solution for the General Case}
-
-\end{frame}
-
-
-\begin{frame}{LQR Solution}
-
-\end{frame}
-
-\begin{frame}{Optimal Full-State Feedback}
+\begin{frame}{Integration}
+\begin{equation}
+\iiint_V f(x,y,z) \,dx\,dy\,dz 
+\end{equation}
 
 \end{frame}
 
 
-\begin{frame}{Properties and Use of the LQR }
+\begin{frame}{Results}
 
 \end{frame}
 
+\begin{frame}{References}
 
+
+
+\end{frame}
 
 %------------------------------------------------
 
@@ -264,8 +242,8 @@ The Linear Quadratic Regulator (LQR) is a well-known method that provides optima
 
 %------------------------------------------------
 
-\begin{frame}
-\Huge{\centerline{The End}}
+\begin{frame}{Acknowledgements}
+This project was proposed and supported by Royal Mail, EPSRC and Imperial College London. A special thanks to Jeremy Bradley and Ben Glocker for their support and advice throughout.
 \end{frame}
 
 %----------------------------------------------------------------------------------------

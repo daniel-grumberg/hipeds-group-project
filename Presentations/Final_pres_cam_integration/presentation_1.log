@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99998 (TeX Live 2017/Debian) (preloaded format=xelatex 2018.10.24)  26 OCT 2018 16:04
+This is XeTeX, Version 3.14159265-2.6-0.99998 (TeX Live 2017/Debian) (preloaded format=xelatex 2018.10.24)  26 OCT 2018 16:31
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -908,24 +908,24 @@ Package: ocgbase 2017/09/29 v0.12 support package for ocgx2.sty
 (./presentation_1.aux)
 \openout1 = `presentation_1.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 96.
-LaTeX Font Info:    ... okay on input line 96.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 96.
-LaTeX Font Info:    ... okay on input line 96.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 96.
-LaTeX Font Info:    ... okay on input line 96.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 96.
-LaTeX Font Info:    ... okay on input line 96.
-LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 96.
-LaTeX Font Info:    ... okay on input line 96.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 96.
-LaTeX Font Info:    ... okay on input line 96.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 96.
-LaTeX Font Info:    ... okay on input line 96.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 96.
-LaTeX Font Info:    ... okay on input line 96.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 96.
-LaTeX Font Info:    ... okay on input line 96.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 97.
+LaTeX Font Info:    ... okay on input line 97.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 97.
+LaTeX Font Info:    ... okay on input line 97.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 97.
+LaTeX Font Info:    ... okay on input line 97.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 97.
+LaTeX Font Info:    ... okay on input line 97.
+LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 97.
+LaTeX Font Info:    ... okay on input line 97.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 97.
+LaTeX Font Info:    ... okay on input line 97.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 97.
+LaTeX Font Info:    ... okay on input line 97.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 97.
+LaTeX Font Info:    ... okay on input line 97.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 97.
+LaTeX Font Info:    ... okay on input line 97.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: xetex
@@ -963,7 +963,7 @@ LaTeX Font Info:    ... okay on input line 96.
 
 ABD: EveryShipout initializing macros
 \AtBeginShipoutBox=\box72
-Package hyperref Info: Link coloring OFF on input line 96.
+Package hyperref Info: Link coloring OFF on input line 97.
 
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
@@ -973,56 +973,56 @@ Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
 \c@section@level=\count326
 )
-LaTeX Info: Redefining \ref on input line 96.
-LaTeX Info: Redefining \pageref on input line 96.
-LaTeX Info: Redefining \nameref on input line 96.
+LaTeX Info: Redefining \ref on input line 97.
+LaTeX Info: Redefining \pageref on input line 97.
+LaTeX Info: Redefining \nameref on input line 97.
 
 (./presentation_1.out) (./presentation_1.out)
 \@outlinefile=\write5
 \openout5 = `presentation_1.out'.
 
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
-(Font)                  OT1/cmr/m/n --> OT1/cmss/m/n on input line 96.
+(Font)                  OT1/cmr/m/n --> OT1/cmss/m/n on input line 97.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
-(Font)                  OT1/cmr/bx/n --> OT1/cmss/bx/n on input line 96.
+(Font)                  OT1/cmr/bx/n --> OT1/cmss/bx/n on input line 97.
 \symnumbers=\mathgroup6
 \sympureletters=\mathgroup7
 LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `normal'
-(Font)                  OT1/cmss/m/n --> TU/lmr/m/n on input line 96.
-LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 96.
+(Font)                  OT1/cmss/m/n --> TU/lmr/m/n on input line 97.
+LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 97.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
-(Font)                  OT1/cmr/bx/n --> TU/lmss/bx/n on input line 96.
+(Font)                  OT1/cmr/bx/n --> TU/lmss/bx/n on input line 97.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
-(Font)                  OT1/cmr/bx/n --> TU/lmss/bx/n on input line 96.
-LaTeX Font Info:    Redeclaring math alphabet \mathsf on input line 96.
+(Font)                  OT1/cmr/bx/n --> TU/lmss/bx/n on input line 97.
+LaTeX Font Info:    Redeclaring math alphabet \mathsf on input line 97.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
-(Font)                  OT1/cmss/m/n --> TU/lmss/m/n on input line 96.
+(Font)                  OT1/cmss/m/n --> TU/lmss/m/n on input line 97.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  OT1/cmss/bx/n --> TU/lmss/m/n on input line 96.
-LaTeX Font Info:    Redeclaring math alphabet \mathit on input line 96.
+(Font)                  OT1/cmss/bx/n --> TU/lmss/m/n on input line 97.
+LaTeX Font Info:    Redeclaring math alphabet \mathit on input line 97.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
-(Font)                  OT1/cmr/m/it --> TU/lmss/m/it on input line 96.
+(Font)                  OT1/cmr/m/it --> TU/lmss/m/it on input line 97.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
-(Font)                  OT1/cmr/bx/it --> TU/lmss/m/it on input line 96.
-LaTeX Font Info:    Redeclaring math alphabet \mathtt on input line 96.
+(Font)                  OT1/cmr/bx/it --> TU/lmss/m/it on input line 97.
+LaTeX Font Info:    Redeclaring math alphabet \mathtt on input line 97.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
-(Font)                  OT1/cmtt/m/n --> TU/lmtt/m/n on input line 96.
+(Font)                  OT1/cmtt/m/n --> TU/lmtt/m/n on input line 97.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  OT1/cmtt/m/n --> TU/lmtt/m/n on input line 96.
+(Font)                  OT1/cmtt/m/n --> TU/lmtt/m/n on input line 97.
 LaTeX Font Info:    Overwriting symbol font `numbers' in version `bold'
-(Font)                  TU/lmss/m/n --> TU/lmss/bx/n on input line 96.
+(Font)                  TU/lmss/m/n --> TU/lmss/bx/n on input line 97.
 LaTeX Font Info:    Overwriting symbol font `pureletters' in version `bold'
-(Font)                  TU/lmss/m/it --> TU/lmss/bx/it on input line 96.
+(Font)                  TU/lmss/m/it --> TU/lmss/bx/it on input line 97.
 LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `bold'
-(Font)                  OT1/cmss/bx/n --> TU/lmr/bx/n on input line 96.
+(Font)                  OT1/cmss/bx/n --> TU/lmr/bx/n on input line 97.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
-(Font)                  TU/lmss/bx/n --> TU/lmss/bx/n on input line 96.
+(Font)                  TU/lmss/bx/n --> TU/lmss/bx/n on input line 97.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  TU/lmss/m/n --> TU/lmss/bx/n on input line 96.
+(Font)                  TU/lmss/m/n --> TU/lmss/bx/n on input line 97.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
-(Font)                  TU/lmss/m/it --> TU/lmss/bx/it on input line 96.
+(Font)                  TU/lmss/m/it --> TU/lmss/bx/it on input line 97.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  TU/lmtt/m/n --> TU/lmtt/bx/n on input line 96.
+(Font)                  TU/lmtt/m/n --> TU/lmtt/bx/n on input line 97.
 
 (/usr/share/texlive/texmf-dist/tex/latex/translator/translator-basic-dictionary
 -English.dict
@@ -1048,7 +1048,7 @@ Dictionary: translator-numbers-dictionary, Language: English
 ry-English.dict
 Dictionary: translator-theorem-dictionary, Language: English 
 ) (./presentation_1.nav)
-Overfull \hbox (354.41193pt too wide) in paragraph at lines 96--96
+Overfull \hbox (354.41193pt too wide) in paragraph at lines 97--97
  [][]  
  []
 
@@ -1074,9 +1074,6 @@ Overfull \hbox (354.41193pt too wide) has occurred while \output is active
 [3
 
 ]
-File: Figures/PID.png Graphic file (type bmp)
-<Figures/PID.png>
-
 Overfull \hbox (354.41193pt too wide) has occurred while \output is active
  [][]  
  []
@@ -1091,10 +1088,6 @@ Overfull \hbox (354.41193pt too wide) has occurred while \output is active
 [5
 
 ]
-Overfull \vbox (4.25691pt too high) detected at line 186
- []
-
-
 Overfull \hbox (354.41193pt too wide) has occurred while \output is active
  [][]  
  []
@@ -1109,789 +1102,6 @@ Overfull \hbox (354.41193pt too wide) has occurred while \output is active
 [7
 
 ]
-File: Figures/PID_animated-1.png Graphic file (type bmp)
-<Figures/PID_animated-1.png>
- <a0,fr0>
-File: Figures/PID_animated-2.png Graphic file (type bmp)
-<Figures/PID_animated-2.png>
- <a0,fr1>
-File: Figures/PID_animated-3.png Graphic file (type bmp)
-<Figures/PID_animated-3.png>
- <a0,fr2>
-File: Figures/PID_animated-4.png Graphic file (type bmp)
-<Figures/PID_animated-4.png>
- <a0,fr3>
-File: Figures/PID_animated-5.png Graphic file (type bmp)
-<Figures/PID_animated-5.png>
- <a0,fr4>
-File: Figures/PID_animated-6.png Graphic file (type bmp)
-<Figures/PID_animated-6.png>
- <a0,fr5>
-File: Figures/PID_animated-7.png Graphic file (type bmp)
-<Figures/PID_animated-7.png>
- <a0,fr6>
-File: Figures/PID_animated-8.png Graphic file (type bmp)
-<Figures/PID_animated-8.png>
- <a0,fr7>
-File: Figures/PID_animated-9.png Graphic file (type bmp)
-<Figures/PID_animated-9.png>
-
-<a0,fr8>
-File: Figures/PID_animated-10.png Graphic file (type bmp)
-<Figures/PID_animated-10.png>
- <a0,fr9>
-File: Figures/PID_animated-11.png Graphic file (type bmp)
-<Figures/PID_animated-11.png>
- <a0,fr10>
-File: Figures/PID_animated-12.png Graphic file (type bmp)
-<Figures/PID_animated-12.png>
- <a0,fr11>
-File: Figures/PID_animated-13.png Graphic file (type bmp)
-<Figures/PID_animated-13.png>
- <a0,fr12>
-File: Figures/PID_animated-14.png Graphic file (type bmp)
-<Figures/PID_animated-14.png>
- <a0,fr13>
-File: Figures/PID_animated-15.png Graphic file (type bmp)
-<Figures/PID_animated-15.png>
- <a0,fr14>
-File: Figures/PID_animated-16.png Graphic file (type bmp)
-<Figures/PID_animated-16.png>
- <a0,fr15>
-File: Figures/PID_animated-17.png Graphic file (type bmp)
-<Figures/PID_animated-17.png>
-
-<a0,fr16>
-File: Figures/PID_animated-18.png Graphic file (type bmp)
-<Figures/PID_animated-18.png>
- <a0,fr17>
-File: Figures/PID_animated-19.png Graphic file (type bmp)
-<Figures/PID_animated-19.png>
- <a0,fr18>
-File: Figures/PID_animated-20.png Graphic file (type bmp)
-<Figures/PID_animated-20.png>
- <a0,fr19>
-File: Figures/PID_animated-21.png Graphic file (type bmp)
-<Figures/PID_animated-21.png>
- <a0,fr20>
-File: Figures/PID_animated-22.png Graphic file (type bmp)
-<Figures/PID_animated-22.png>
- <a0,fr21>
-File: Figures/PID_animated-23.png Graphic file (type bmp)
-<Figures/PID_animated-23.png>
- <a0,fr22>
-File: Figures/PID_animated-24.png Graphic file (type bmp)
-<Figures/PID_animated-24.png>
-
-<a0,fr23>
-File: Figures/PID_animated-25.png Graphic file (type bmp)
-<Figures/PID_animated-25.png>
- <a0,fr24>
-File: Figures/PID_animated-26.png Graphic file (type bmp)
-<Figures/PID_animated-26.png>
- <a0,fr25>
-File: Figures/PID_animated-27.png Graphic file (type bmp)
-<Figures/PID_animated-27.png>
- <a0,fr26>
-File: Figures/PID_animated-28.png Graphic file (type bmp)
-<Figures/PID_animated-28.png>
- <a0,fr27>
-File: Figures/PID_animated-29.png Graphic file (type bmp)
-<Figures/PID_animated-29.png>
- <a0,fr28>
-File: Figures/PID_animated-30.png Graphic file (type bmp)
-<Figures/PID_animated-30.png>
- <a0,fr29>
-File: Figures/PID_animated-31.png Graphic file (type bmp)
-<Figures/PID_animated-31.png>
-
-<a0,fr30>
-File: Figures/PID_animated-32.png Graphic file (type bmp)
-<Figures/PID_animated-32.png>
- <a0,fr31>
-File: Figures/PID_animated-33.png Graphic file (type bmp)
-<Figures/PID_animated-33.png>
- <a0,fr32>
-File: Figures/PID_animated-34.png Graphic file (type bmp)
-<Figures/PID_animated-34.png>
- <a0,fr33>
-File: Figures/PID_animated-35.png Graphic file (type bmp)
-<Figures/PID_animated-35.png>
- <a0,fr34>
-File: Figures/PID_animated-36.png Graphic file (type bmp)
-<Figures/PID_animated-36.png>
- <a0,fr35>
-File: Figures/PID_animated-37.png Graphic file (type bmp)
-<Figures/PID_animated-37.png>
- <a0,fr36>
-File: Figures/PID_animated-38.png Graphic file (type bmp)
-<Figures/PID_animated-38.png>
-
-<a0,fr37>
-File: Figures/PID_animated-39.png Graphic file (type bmp)
-<Figures/PID_animated-39.png>
- <a0,fr38>
-File: Figures/PID_animated-40.png Graphic file (type bmp)
-<Figures/PID_animated-40.png>
- <a0,fr39>
-File: Figures/PID_animated-41.png Graphic file (type bmp)
-<Figures/PID_animated-41.png>
- <a0,fr40>
-File: Figures/PID_animated-42.png Graphic file (type bmp)
-<Figures/PID_animated-42.png>
- <a0,fr41>
-File: Figures/PID_animated-43.png Graphic file (type bmp)
-<Figures/PID_animated-43.png>
- <a0,fr42>
-File: Figures/PID_animated-44.png Graphic file (type bmp)
-<Figures/PID_animated-44.png>
- <a0,fr43>
-File: Figures/PID_animated-45.png Graphic file (type bmp)
-<Figures/PID_animated-45.png>
-
-<a0,fr44>
-File: Figures/PID_animated-46.png Graphic file (type bmp)
-<Figures/PID_animated-46.png>
- <a0,fr45>
-File: Figures/PID_animated-47.png Graphic file (type bmp)
-<Figures/PID_animated-47.png>
- <a0,fr46>
-File: Figures/PID_animated-48.png Graphic file (type bmp)
-<Figures/PID_animated-48.png>
- <a0,fr47>
-File: Figures/PID_animated-49.png Graphic file (type bmp)
-<Figures/PID_animated-49.png>
- <a0,fr48>
-File: Figures/PID_animated-50.png Graphic file (type bmp)
-<Figures/PID_animated-50.png>
- <a0,fr49>
-File: Figures/PID_animated-51.png Graphic file (type bmp)
-<Figures/PID_animated-51.png>
- <a0,fr50>
-File: Figures/PID_animated-52.png Graphic file (type bmp)
-<Figures/PID_animated-52.png>
-
-<a0,fr51>
-File: Figures/PID_animated-53.png Graphic file (type bmp)
-<Figures/PID_animated-53.png>
- <a0,fr52>
-File: Figures/PID_animated-54.png Graphic file (type bmp)
-<Figures/PID_animated-54.png>
- <a0,fr53>
-File: Figures/PID_animated-55.png Graphic file (type bmp)
-<Figures/PID_animated-55.png>
- <a0,fr54>
-File: Figures/PID_animated-56.png Graphic file (type bmp)
-<Figures/PID_animated-56.png>
- <a0,fr55>
-File: Figures/PID_animated-57.png Graphic file (type bmp)
-<Figures/PID_animated-57.png>
- <a0,fr56>
-File: Figures/PID_animated-58.png Graphic file (type bmp)
-<Figures/PID_animated-58.png>
- <a0,fr57>
-File: Figures/PID_animated-59.png Graphic file (type bmp)
-<Figures/PID_animated-59.png>
-
-<a0,fr58>
-File: Figures/PID_animated-60.png Graphic file (type bmp)
-<Figures/PID_animated-60.png>
- <a0,fr59>
-File: Figures/PID_animated-61.png Graphic file (type bmp)
-<Figures/PID_animated-61.png>
- <a0,fr60>
-File: Figures/PID_animated-62.png Graphic file (type bmp)
-<Figures/PID_animated-62.png>
- <a0,fr61>
-File: Figures/PID_animated-63.png Graphic file (type bmp)
-<Figures/PID_animated-63.png>
- <a0,fr62>
-File: Figures/PID_animated-64.png Graphic file (type bmp)
-<Figures/PID_animated-64.png>
- <a0,fr63>
-File: Figures/PID_animated-65.png Graphic file (type bmp)
-<Figures/PID_animated-65.png>
- <a0,fr64>
-File: Figures/PID_animated-66.png Graphic file (type bmp)
-<Figures/PID_animated-66.png>
-
-<a0,fr65>
-File: Figures/PID_animated-67.png Graphic file (type bmp)
-<Figures/PID_animated-67.png>
- <a0,fr66>
-File: Figures/PID_animated-68.png Graphic file (type bmp)
-<Figures/PID_animated-68.png>
- <a0,fr67>
-File: Figures/PID_animated-69.png Graphic file (type bmp)
-<Figures/PID_animated-69.png>
- <a0,fr68>
-File: Figures/PID_animated-70.png Graphic file (type bmp)
-<Figures/PID_animated-70.png>
- <a0,fr69>
-File: Figures/PID_animated-71.png Graphic file (type bmp)
-<Figures/PID_animated-71.png>
- <a0,fr70>
-File: Figures/PID_animated-72.png Graphic file (type bmp)
-<Figures/PID_animated-72.png>
- <a0,fr71>
-File: Figures/PID_animated-73.png Graphic file (type bmp)
-<Figures/PID_animated-73.png>
-
-<a0,fr72>
-File: Figures/PID_animated-74.png Graphic file (type bmp)
-<Figures/PID_animated-74.png>
- <a0,fr73>
-File: Figures/PID_animated-75.png Graphic file (type bmp)
-<Figures/PID_animated-75.png>
- <a0,fr74>
-File: Figures/PID_animated-76.png Graphic file (type bmp)
-<Figures/PID_animated-76.png>
- <a0,fr75>
-File: Figures/PID_animated-77.png Graphic file (type bmp)
-<Figures/PID_animated-77.png>
- <a0,fr76>
-File: Figures/PID_animated-78.png Graphic file (type bmp)
-<Figures/PID_animated-78.png>
- <a0,fr77>
-File: Figures/PID_animated-79.png Graphic file (type bmp)
-<Figures/PID_animated-79.png>
- <a0,fr78>
-File: Figures/PID_animated-80.png Graphic file (type bmp)
-<Figures/PID_animated-80.png>
-
-<a0,fr79>
-File: Figures/PID_animated-81.png Graphic file (type bmp)
-<Figures/PID_animated-81.png>
- <a0,fr80>
-File: Figures/PID_animated-82.png Graphic file (type bmp)
-<Figures/PID_animated-82.png>
- <a0,fr81>
-File: Figures/PID_animated-83.png Graphic file (type bmp)
-<Figures/PID_animated-83.png>
- <a0,fr82>
-File: Figures/PID_animated-84.png Graphic file (type bmp)
-<Figures/PID_animated-84.png>
- <a0,fr83>
-File: Figures/PID_animated-85.png Graphic file (type bmp)
-<Figures/PID_animated-85.png>
- <a0,fr84>
-File: Figures/PID_animated-86.png Graphic file (type bmp)
-<Figures/PID_animated-86.png>
- <a0,fr85>
-File: Figures/PID_animated-87.png Graphic file (type bmp)
-<Figures/PID_animated-87.png>
-
-<a0,fr86>
-File: Figures/PID_animated-88.png Graphic file (type bmp)
-<Figures/PID_animated-88.png>
- <a0,fr87>
-File: Figures/PID_animated-89.png Graphic file (type bmp)
-<Figures/PID_animated-89.png>
- <a0,fr88>
-File: Figures/PID_animated-90.png Graphic file (type bmp)
-<Figures/PID_animated-90.png>
- <a0,fr89>
-File: Figures/PID_animated-91.png Graphic file (type bmp)
-<Figures/PID_animated-91.png>
- <a0,fr90>
-File: Figures/PID_animated-92.png Graphic file (type bmp)
-<Figures/PID_animated-92.png>
- <a0,fr91>
-File: Figures/PID_animated-93.png Graphic file (type bmp)
-<Figures/PID_animated-93.png>
- <a0,fr92>
-File: Figures/PID_animated-94.png Graphic file (type bmp)
-<Figures/PID_animated-94.png>
-
-<a0,fr93>
-File: Figures/PID_animated-95.png Graphic file (type bmp)
-<Figures/PID_animated-95.png>
- <a0,fr94>
-File: Figures/PID_animated-96.png Graphic file (type bmp)
-<Figures/PID_animated-96.png>
- <a0,fr95>
-File: Figures/PID_animated-97.png Graphic file (type bmp)
-<Figures/PID_animated-97.png>
- <a0,fr96>
-File: Figures/PID_animated-98.png Graphic file (type bmp)
-<Figures/PID_animated-98.png>
- <a0,fr97>
-File: Figures/PID_animated-99.png Graphic file (type bmp)
-<Figures/PID_animated-99.png>
- <a0,fr98>
-File: Figures/PID_animated-100.png Graphic file (type bmp)
-<Figures/PID_animated-100.png>
- <a0,fr99>
-File: Figures/PID_animated-101.png Graphic file (type bmp)
-<Figures/PID_animated-101.png>
-
-<a0,fr100>
-File: Figures/PID_animated-102.png Graphic file (type bmp)
-<Figures/PID_animated-102.png>
- <a0,fr101>
-File: Figures/PID_animated-103.png Graphic file (type bmp)
-<Figures/PID_animated-103.png>
- <a0,fr102>
-File: Figures/PID_animated-104.png Graphic file (type bmp)
-<Figures/PID_animated-104.png>
- <a0,fr103>
-File: Figures/PID_animated-105.png Graphic file (type bmp)
-<Figures/PID_animated-105.png>
- <a0,fr104>
-File: Figures/PID_animated-106.png Graphic file (type bmp)
-<Figures/PID_animated-106.png>
- <a0,fr105>
-File: Figures/PID_animated-107.png Graphic file (type bmp)
-<Figures/PID_animated-107.png>
- <a0,fr106>
-File: Figures/PID_animated-108.png Graphic file (type bmp)
-<Figures/PID_animated-108.png>
-
-<a0,fr107>
-File: Figures/PID_animated-109.png Graphic file (type bmp)
-<Figures/PID_animated-109.png>
- <a0,fr108>
-File: Figures/PID_animated-110.png Graphic file (type bmp)
-<Figures/PID_animated-110.png>
- <a0,fr109>
-File: Figures/PID_animated-111.png Graphic file (type bmp)
-<Figures/PID_animated-111.png>
- <a0,fr110>
-File: Figures/PID_animated-112.png Graphic file (type bmp)
-<Figures/PID_animated-112.png>
- <a0,fr111>
-File: Figures/PID_animated-113.png Graphic file (type bmp)
-<Figures/PID_animated-113.png>
- <a0,fr112>
-File: Figures/PID_animated-114.png Graphic file (type bmp)
-<Figures/PID_animated-114.png>
- <a0,fr113>
-File: Figures/PID_animated-115.png Graphic file (type bmp)
-<Figures/PID_animated-115.png>
-
-<a0,fr114>
-File: Figures/PID_animated-116.png Graphic file (type bmp)
-<Figures/PID_animated-116.png>
- <a0,fr115>
-File: Figures/PID_animated-117.png Graphic file (type bmp)
-<Figures/PID_animated-117.png>
- <a0,fr116>
-File: Figures/PID_animated-118.png Graphic file (type bmp)
-<Figures/PID_animated-118.png>
- <a0,fr117>
-File: Figures/PID_animated-119.png Graphic file (type bmp)
-<Figures/PID_animated-119.png>
- <a0,fr118>
-File: Figures/PID_animated-120.png Graphic file (type bmp)
-<Figures/PID_animated-120.png>
- <a0,fr119>
-File: Figures/PID_animated-121.png Graphic file (type bmp)
-<Figures/PID_animated-121.png>
- <a0,fr120>
-File: Figures/PID_animated-122.png Graphic file (type bmp)
-<Figures/PID_animated-122.png>
-
-<a0,fr121>
-File: Figures/PID_animated-123.png Graphic file (type bmp)
-<Figures/PID_animated-123.png>
- <a0,fr122>
-File: Figures/PID_animated-124.png Graphic file (type bmp)
-<Figures/PID_animated-124.png>
- <a0,fr123>
-File: Figures/PID_animated-125.png Graphic file (type bmp)
-<Figures/PID_animated-125.png>
- <a0,fr124>
-File: Figures/PID_animated-126.png Graphic file (type bmp)
-<Figures/PID_animated-126.png>
- <a0,fr125>
-File: Figures/PID_animated-127.png Graphic file (type bmp)
-<Figures/PID_animated-127.png>
- <a0,fr126>
-File: Figures/PID_animated-128.png Graphic file (type bmp)
-<Figures/PID_animated-128.png>
- <a0,fr127>
-File: Figures/PID_animated-129.png Graphic file (type bmp)
-<Figures/PID_animated-129.png>
-
-<a0,fr128>
-File: Figures/PID_animated-130.png Graphic file (type bmp)
-<Figures/PID_animated-130.png>
- <a0,fr129>
-File: Figures/PID_animated-131.png Graphic file (type bmp)
-<Figures/PID_animated-131.png>
- <a0,fr130>
-File: Figures/PID_animated-132.png Graphic file (type bmp)
-<Figures/PID_animated-132.png>
- <a0,fr131>
-File: Figures/PID_animated-133.png Graphic file (type bmp)
-<Figures/PID_animated-133.png>
- <a0,fr132>
-File: Figures/PID_animated-134.png Graphic file (type bmp)
-<Figures/PID_animated-134.png>
- <a0,fr133>
-File: Figures/PID_animated-135.png Graphic file (type bmp)
-<Figures/PID_animated-135.png>
- <a0,fr134>
-File: Figures/PID_animated-136.png Graphic file (type bmp)
-<Figures/PID_animated-136.png>
-
-<a0,fr135>
-File: Figures/PID_animated-137.png Graphic file (type bmp)
-<Figures/PID_animated-137.png>
- <a0,fr136>
-File: Figures/PID_animated-138.png Graphic file (type bmp)
-<Figures/PID_animated-138.png>
- <a0,fr137>
-File: Figures/PID_animated-139.png Graphic file (type bmp)
-<Figures/PID_animated-139.png>
- <a0,fr138>
-File: Figures/PID_animated-140.png Graphic file (type bmp)
-<Figures/PID_animated-140.png>
- <a0,fr139>
-File: Figures/PID_animated-141.png Graphic file (type bmp)
-<Figures/PID_animated-141.png>
- <a0,fr140>
-File: Figures/PID_animated-142.png Graphic file (type bmp)
-<Figures/PID_animated-142.png>
- <a0,fr141>
-File: Figures/PID_animated-143.png Graphic file (type bmp)
-<Figures/PID_animated-143.png>
-
-<a0,fr142>
-File: Figures/PID_animated-144.png Graphic file (type bmp)
-<Figures/PID_animated-144.png>
- <a0,fr143>
-File: Figures/PID_animated-145.png Graphic file (type bmp)
-<Figures/PID_animated-145.png>
- <a0,fr144>
-File: Figures/PID_animated-146.png Graphic file (type bmp)
-<Figures/PID_animated-146.png>
- <a0,fr145>
-File: Figures/PID_animated-147.png Graphic file (type bmp)
-<Figures/PID_animated-147.png>
- <a0,fr146>
-File: Figures/PID_animated-148.png Graphic file (type bmp)
-<Figures/PID_animated-148.png>
- <a0,fr147>
-File: Figures/PID_animated-149.png Graphic file (type bmp)
-<Figures/PID_animated-149.png>
- <a0,fr148>
-File: Figures/PID_animated-150.png Graphic file (type bmp)
-<Figures/PID_animated-150.png>
-
-<a0,fr149>
-File: Figures/PID_animated-151.png Graphic file (type bmp)
-<Figures/PID_animated-151.png>
- <a0,fr150>
-File: Figures/PID_animated-152.png Graphic file (type bmp)
-<Figures/PID_animated-152.png>
- <a0,fr151>
-File: Figures/PID_animated-153.png Graphic file (type bmp)
-<Figures/PID_animated-153.png>
- <a0,fr152>
-File: Figures/PID_animated-154.png Graphic file (type bmp)
-<Figures/PID_animated-154.png>
- <a0,fr153>
-File: Figures/PID_animated-155.png Graphic file (type bmp)
-<Figures/PID_animated-155.png>
- <a0,fr154>
-File: Figures/PID_animated-156.png Graphic file (type bmp)
-<Figures/PID_animated-156.png>
- <a0,fr155>
-File: Figures/PID_animated-157.png Graphic file (type bmp)
-<Figures/PID_animated-157.png>
-
-<a0,fr156>
-File: Figures/PID_animated-158.png Graphic file (type bmp)
-<Figures/PID_animated-158.png>
- <a0,fr157>
-File: Figures/PID_animated-159.png Graphic file (type bmp)
-<Figures/PID_animated-159.png>
- <a0,fr158>
-File: Figures/PID_animated-160.png Graphic file (type bmp)
-<Figures/PID_animated-160.png>
- <a0,fr159>
-File: Figures/PID_animated-161.png Graphic file (type bmp)
-<Figures/PID_animated-161.png>
- <a0,fr160>
-File: Figures/PID_animated-162.png Graphic file (type bmp)
-<Figures/PID_animated-162.png>
- <a0,fr161>
-File: Figures/PID_animated-163.png Graphic file (type bmp)
-<Figures/PID_animated-163.png>
- <a0,fr162>
-File: Figures/PID_animated-164.png Graphic file (type bmp)
-<Figures/PID_animated-164.png>
-
-<a0,fr163>
-File: Figures/PID_animated-165.png Graphic file (type bmp)
-<Figures/PID_animated-165.png>
- <a0,fr164>
-File: Figures/PID_animated-166.png Graphic file (type bmp)
-<Figures/PID_animated-166.png>
- <a0,fr165>
-File: Figures/PID_animated-167.png Graphic file (type bmp)
-<Figures/PID_animated-167.png>
- <a0,fr166>
-File: Figures/PID_animated-168.png Graphic file (type bmp)
-<Figures/PID_animated-168.png>
- <a0,fr167>
-File: Figures/PID_animated-169.png Graphic file (type bmp)
-<Figures/PID_animated-169.png>
- <a0,fr168>
-File: Figures/PID_animated-170.png Graphic file (type bmp)
-<Figures/PID_animated-170.png>
- <a0,fr169>
-File: Figures/PID_animated-171.png Graphic file (type bmp)
-<Figures/PID_animated-171.png>
-
-<a0,fr170>
-File: Figures/PID_animated-172.png Graphic file (type bmp)
-<Figures/PID_animated-172.png>
- <a0,fr171>
-File: Figures/PID_animated-173.png Graphic file (type bmp)
-<Figures/PID_animated-173.png>
- <a0,fr172>
-File: Figures/PID_animated-174.png Graphic file (type bmp)
-<Figures/PID_animated-174.png>
- <a0,fr173>
-File: Figures/PID_animated-175.png Graphic file (type bmp)
-<Figures/PID_animated-175.png>
- <a0,fr174>
-File: Figures/PID_animated-176.png Graphic file (type bmp)
-<Figures/PID_animated-176.png>
- <a0,fr175>
-File: Figures/PID_animated-177.png Graphic file (type bmp)
-<Figures/PID_animated-177.png>
- <a0,fr176>
-File: Figures/PID_animated-178.png Graphic file (type bmp)
-<Figures/PID_animated-178.png>
-
-<a0,fr177>
-File: Figures/PID_animated-179.png Graphic file (type bmp)
-<Figures/PID_animated-179.png>
- <a0,fr178>
-File: Figures/PID_animated-180.png Graphic file (type bmp)
-<Figures/PID_animated-180.png>
- <a0,fr179>
-File: Figures/PID_animated-181.png Graphic file (type bmp)
-<Figures/PID_animated-181.png>
- <a0,fr180>
-File: Figures/PID_animated-182.png Graphic file (type bmp)
-<Figures/PID_animated-182.png>
- <a0,fr181>
-File: Figures/PID_animated-183.png Graphic file (type bmp)
-<Figures/PID_animated-183.png>
- <a0,fr182>
-File: Figures/PID_animated-184.png Graphic file (type bmp)
-<Figures/PID_animated-184.png>
- <a0,fr183>
-File: Figures/PID_animated-185.png Graphic file (type bmp)
-<Figures/PID_animated-185.png>
-
-<a0,fr184>
-File: Figures/PID_animated-186.png Graphic file (type bmp)
-<Figures/PID_animated-186.png>
- <a0,fr185>
-File: Figures/PID_animated-187.png Graphic file (type bmp)
-<Figures/PID_animated-187.png>
- <a0,fr186>
-File: Figures/PID_animated-188.png Graphic file (type bmp)
-<Figures/PID_animated-188.png>
- <a0,fr187>
-File: Figures/PID_animated-189.png Graphic file (type bmp)
-<Figures/PID_animated-189.png>
- <a0,fr188>
-File: Figures/PID_animated-190.png Graphic file (type bmp)
-<Figures/PID_animated-190.png>
- <a0,fr189>
-File: Figures/PID_animated-191.png Graphic file (type bmp)
-<Figures/PID_animated-191.png>
- <a0,fr190>
-File: Figures/PID_animated-192.png Graphic file (type bmp)
-<Figures/PID_animated-192.png>
-
-<a0,fr191>
-File: Figures/PID_animated-193.png Graphic file (type bmp)
-<Figures/PID_animated-193.png>
- <a0,fr192>
-File: Figures/PID_animated-194.png Graphic file (type bmp)
-<Figures/PID_animated-194.png>
- <a0,fr193>
-File: Figures/PID_animated-195.png Graphic file (type bmp)
-<Figures/PID_animated-195.png>
- <a0,fr194>
-File: Figures/PID_animated-196.png Graphic file (type bmp)
-<Figures/PID_animated-196.png>
- <a0,fr195>
-File: Figures/PID_animated-197.png Graphic file (type bmp)
-<Figures/PID_animated-197.png>
- <a0,fr196>
-File: Figures/PID_animated-198.png Graphic file (type bmp)
-<Figures/PID_animated-198.png>
- <a0,fr197>
-File: Figures/PID_animated-199.png Graphic file (type bmp)
-<Figures/PID_animated-199.png>
-
-<a0,fr198>
-File: Figures/PID_animated-200.png Graphic file (type bmp)
-<Figures/PID_animated-200.png>
- <a0,fr199>
-File: Figures/PID_animated-201.png Graphic file (type bmp)
-<Figures/PID_animated-201.png>
- <a0,fr200>
-File: Figures/PID_animated-202.png Graphic file (type bmp)
-<Figures/PID_animated-202.png>
- <a0,fr201>
-File: Figures/PID_animated-203.png Graphic file (type bmp)
-<Figures/PID_animated-203.png>
- <a0,fr202>
-File: Figures/PID_animated-204.png Graphic file (type bmp)
-<Figures/PID_animated-204.png>
- <a0,fr203>
-File: Figures/PID_animated-205.png Graphic file (type bmp)
-<Figures/PID_animated-205.png>
- <a0,fr204>
-File: Figures/PID_animated-206.png Graphic file (type bmp)
-<Figures/PID_animated-206.png>
-
-<a0,fr205>
-File: Figures/PID_animated-207.png Graphic file (type bmp)
-<Figures/PID_animated-207.png>
- <a0,fr206>
-File: Figures/PID_animated-208.png Graphic file (type bmp)
-<Figures/PID_animated-208.png>
- <a0,fr207>
-File: Figures/PID_animated-209.png Graphic file (type bmp)
-<Figures/PID_animated-209.png>
- <a0,fr208>
-File: Figures/PID_animated-210.png Graphic file (type bmp)
-<Figures/PID_animated-210.png>
- <a0,fr209>
-File: Figures/PID_animated-211.png Graphic file (type bmp)
-<Figures/PID_animated-211.png>
- <a0,fr210>
-File: Figures/PID_animated-212.png Graphic file (type bmp)
-<Figures/PID_animated-212.png>
- <a0,fr211>
-File: Figures/PID_animated-213.png Graphic file (type bmp)
-<Figures/PID_animated-213.png>
-
-<a0,fr212>
-File: Figures/PID_animated-214.png Graphic file (type bmp)
-<Figures/PID_animated-214.png>
- <a0,fr213>
-File: Figures/PID_animated-215.png Graphic file (type bmp)
-<Figures/PID_animated-215.png>
- <a0,fr214>
-File: Figures/PID_animated-216.png Graphic file (type bmp)
-<Figures/PID_animated-216.png>
- <a0,fr215>
-File: Figures/PID_animated-217.png Graphic file (type bmp)
-<Figures/PID_animated-217.png>
- <a0,fr216>
-File: Figures/PID_animated-218.png Graphic file (type bmp)
-<Figures/PID_animated-218.png>
- <a0,fr217>
-File: Figures/PID_animated-219.png Graphic file (type bmp)
-<Figures/PID_animated-219.png>
- <a0,fr218>
-File: Figures/PID_animated-220.png Graphic file (type bmp)
-<Figures/PID_animated-220.png>
-
-<a0,fr219>
-File: Figures/PID_animated-221.png Graphic file (type bmp)
-<Figures/PID_animated-221.png>
- <a0,fr220>
-File: Figures/PID_animated-222.png Graphic file (type bmp)
-<Figures/PID_animated-222.png>
- <a0,fr221>
-File: Figures/PID_animated-223.png Graphic file (type bmp)
-<Figures/PID_animated-223.png>
- <a0,fr222>
-File: Figures/PID_animated-224.png Graphic file (type bmp)
-<Figures/PID_animated-224.png>
- <a0,fr223>
-File: Figures/PID_animated-225.png Graphic file (type bmp)
-<Figures/PID_animated-225.png>
- <a0,fr224>
-File: Figures/PID_animated-226.png Graphic file (type bmp)
-<Figures/PID_animated-226.png>
- <a0,fr225>
-File: Figures/PID_animated-227.png Graphic file (type bmp)
-<Figures/PID_animated-227.png>
-
-<a0,fr226>
-File: Figures/PID_animated-228.png Graphic file (type bmp)
-<Figures/PID_animated-228.png>
- <a0,fr227>
-File: Figures/PID_animated-229.png Graphic file (type bmp)
-<Figures/PID_animated-229.png>
- <a0,fr228>
-File: Figures/PID_animated-230.png Graphic file (type bmp)
-<Figures/PID_animated-230.png>
- <a0,fr229>
-File: Figures/PID_animated-231.png Graphic file (type bmp)
-<Figures/PID_animated-231.png>
- <a0,fr230>
-File: Figures/PID_animated-232.png Graphic file (type bmp)
-<Figures/PID_animated-232.png>
- <a0,fr231>
-File: Figures/PID_animated-233.png Graphic file (type bmp)
-<Figures/PID_animated-233.png>
- <a0,fr232>
-File: Figures/PID_animated-234.png Graphic file (type bmp)
-<Figures/PID_animated-234.png>
-
-<a0,fr233>
-File: Figures/PID_animated-235.png Graphic file (type bmp)
-<Figures/PID_animated-235.png>
- <a0,fr234>
-File: Figures/PID_animated-236.png Graphic file (type bmp)
-<Figures/PID_animated-236.png>
- <a0,fr235>
-File: Figures/PID_animated-237.png Graphic file (type bmp)
-<Figures/PID_animated-237.png>
- <a0,fr236>
-File: Figures/PID_animated-238.png Graphic file (type bmp)
-<Figures/PID_animated-238.png>
- <a0,fr237>
-File: Figures/PID_animated-239.png Graphic file (type bmp)
-<Figures/PID_animated-239.png>
- <a0,fr238>
-File: Figures/PID_animated-240.png Graphic file (type bmp)
-<Figures/PID_animated-240.png>
- <a0,fr239>
-File: Figures/PID_animated-241.png Graphic file (type bmp)
-<Figures/PID_animated-241.png>
-
-<a0,fr240>
-File: Figures/PID_animated-242.png Graphic file (type bmp)
-<Figures/PID_animated-242.png>
- <a0,fr241>
-File: Figures/PID_animated-243.png Graphic file (type bmp)
-<Figures/PID_animated-243.png>
- <a0,fr242>
-File: Figures/PID_animated-244.png Graphic file (type bmp)
-<Figures/PID_animated-244.png>
- <a0,fr243>
-File: Figures/PID_animated-245.png Graphic file (type bmp)
-<Figures/PID_animated-245.png>
- <a0,fr244>
-File: Figures/PID_animated-246.png Graphic file (type bmp)
-<Figures/PID_animated-246.png>
- <a0,fr245>
-File: Figures/PID_animated-247.png Graphic file (type bmp)
-<Figures/PID_animated-247.png>
- <a0,fr246>
-File: Figures/PID_animated-248.png Graphic file (type bmp)
-<Figures/PID_animated-248.png>
-
-<a0,fr247>
-Overfull \vbox (19.76135pt too high) detected at line 202
- []
-
-
 Overfull \hbox (354.41193pt too wide) has occurred while \output is active
  [][]  
  []
@@ -1899,6 +1109,22 @@ Overfull \hbox (354.41193pt too wide) has occurred while \output is active
 [8
 
 ]
+LaTeX Font Info:    Try loading font information for U+msa on input line 225.
+ (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Try loading font information for U+msb on input line 225.
+
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+LaTeX Font Info:    Font shape `TU/lmss/m/it' in size <10.95> not available
+(Font)              Font shape `TU/lmss/m/sl' tried instead on input line 225.
+LaTeX Font Info:    Font shape `TU/lmss/m/it' in size <8> not available
+(Font)              Font shape `TU/lmss/m/sl' tried instead on input line 225.
+LaTeX Font Info:    Font shape `TU/lmss/m/it' in size <6> not available
+(Font)              Font shape `TU/lmss/m/sl' tried instead on input line 225.
+
 Overfull \hbox (354.41193pt too wide) has occurred while \output is active
  [][]  
  []
@@ -1927,62 +1153,6 @@ Overfull \hbox (354.41193pt too wide) has occurred while \output is active
 [12
 
 ]
-Overfull \hbox (354.41193pt too wide) has occurred while \output is active
- [][]  
- []
-
-[13
-
-]
-Overfull \hbox (354.41193pt too wide) has occurred while \output is active
- [][]  
- []
-
-[14
-
-]
-Overfull \hbox (354.41193pt too wide) has occurred while \output is active
- [][]  
- []
-
-[15
-
-]
-Overfull \hbox (354.41193pt too wide) has occurred while \output is active
- [][]  
- []
-
-[16
-
-]
-Overfull \hbox (354.41193pt too wide) has occurred while \output is active
- [][]  
- []
-
-[17
-
-]
-Overfull \hbox (354.41193pt too wide) has occurred while \output is active
- [][]  
- []
-
-[18
-
-]
-Overfull \hbox (354.41193pt too wide) has occurred while \output is active
- [][]  
- []
-
-[19
-
-]
-Overfull \hbox (354.41193pt too wide) has occurred while \output is active
- [][]  
- []
-
-[20
-
-]
 \tf@nav=\write6
 \openout6 = `presentation_1.nav'.
 
@@ -1992,19 +1162,19 @@ Overfull \hbox (354.41193pt too wide) has occurred while \output is active
 \tf@snm=\write8
 \openout8 = `presentation_1.snm'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 273.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 273.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 251.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 251.
  (./presentation_1.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 273.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 273.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 251.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 251.
  ) 
 Here is how much of TeX's memory you used:
- 30797 strings out of 493007
- 589019 string characters out of 6136718
- 831997 words of memory out of 5000000
- 34089 multiletter control sequences out of 15000+600000
- 530712 words of font info for 33 fonts, out of 8000000 for 9000
+ 28806 strings out of 493007
+ 541047 string characters out of 6136718
+ 601341 words of memory out of 5000000
+ 32334 multiletter control sequences out of 15000+600000
+ 535373 words of font info for 52 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 56i,15n,63p,10397b,601s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 56i,15n,57p,10397b,601s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on presentation_1.pdf (20 pages).
+Output written on presentation_1.pdf (12 pages).
