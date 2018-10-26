@@ -86,7 +86,16 @@
 
 \author{\textbf{HiPEDS 2018 Cohort:} G. Bisbas, L. Castiglione, D. Grumberg, S. Karolčík, L. Keeble, D. Kulon, B. Kwan, C. McMeel, R. Miles, J. Ortiz, N. Perez-Nieves, V. Pham Ngoc, J. Vandebon, D. Vink} % Your name
 \institute[Imperial College London] % Your institution as it will appear on the bottom of every slide, may be shorthand to save space
-{ Imperial College London \\add logos % Your institution for the title page
+{ Imperial College London \\
+	
+	
+		\begin{tabular}{ccc}
+		\includegraphics[width=2cm]{Figures/royalmail} &
+		\includegraphics[width=3.5cm]{Figures/epsrc} &
+		\includegraphics[width=5cm]{Figures/imperial}
+	\end{tabular}
+
+ % Your institution for the title page
 \medskip % Your email address
 }
 
@@ -132,7 +141,7 @@
 \frametitle{The problem and the goal} 
 \begin{figure}	
 	\includegraphics[width=0.5\textwidth]{Figures/royal_vans.png}
-	\caption{Royal vans}
+	\caption{Royal vans. \textit{Courtesy of https://www.pressandjournal.co.uk}}
 	\label{vans}
 \end{figure}
 
@@ -147,40 +156,31 @@
 \end{frame}
 
 
-
-
-
-
 \begin{frame}
-\frametitle{The hardware} % Table of contents slide, comment this block out to remove it
+\frametitle{The hardware - Choosing the camera fitting our needs best} % Table of contents slide, comment this block out to remove it
 %\tableofcontents % Throughout your presentation, if you choose to use \section{} and \subsection{} commands, these will automatically be printed on this slide as an overview of your presentation
 
-%----------------------------------------------------------------------------------------
-%	PRESENTATION SLIDES
-%----------------------------------------------------------------------------------------
+Three (3) cameras were considered. Pros and cons of each were weighted and the group ended up choosing Intel RealSense D435.
 
-%------------------------------------------------
- % Sections can be created in order to organize your presentation into discrete blocks, all sections and subsections are automatically printed in the table of contents as an overview of the talk
-%------------------------------------------------
+\includegraphics[width = 2cm]{Figures/Realsense1}
+\includegraphics[width = 4cm]{Figures/intel2} \hspace{1cm}
+\includegraphics[width = 3cm]{Figures/ZED} \hspace{2cm}
+\\ Intel Realsense SR$300$ is better for indoor locations due to infrared light while Zed Stereo Camera is better for outdoors. Our experiments using both of them, reassured this notion. After excluding the camera that didn't work, we settled on the Realsense $D435$ due to its superior price point and lack of dependence on environmental factors.
+
+
 %\begin{figure}	
 %	\includegraphics[width=0.8\textwidth]{Figures/PID.png}
 %	\caption{PID controller}
 %	\label{pid}
 %\end{figure}
 
-\begin{itemize}
-	\item
-
-	\item 
-	
-\end{itemize}
 
 \end{frame}
 %\subsection{Subsection Example} % A subsection can be created just before a set of slides with a common theme to further break down your presentation into chunks
 
 \begin{frame}\frametitle{Extracting the point cloud}
 
-
+Luca here you go : Add photos and something about your code
 
 \begin{itemize}
 	\item 
@@ -192,55 +192,134 @@
 \end{frame}
 
 \begin{frame}{Denoising the point cloud}
+Extracted point clouds are often very noisy, so, a need for removing outliers is needed.
 
+\begin{itemize}
+	\item Step 1: Hard-cut denoising of points that are very far away of the mass centre.
+	\item Step 2: Use a nearest neighbours approach with a predefined threshold to remove more outliers. 
+\end{itemize}
 
-
-
-
-
-
-
+Resulted point clouds were found to be \textbf{95\%} correctly denoised via simple parameter tuning.
 
 
 
 \end{frame}
 
-
+%----------------------------------------------------------------------
 \begin{frame}{The ICP algorithm}
 
+{\small The Iterative Closest Points algorithm was used to merge the different point clouds extracted from the camera.
 
+For each point in the source point cloud, match the closest point in the reference point cloud (or a selected set).
+\begin{enumerate}
+	\item Estimate the combination of rotation and translation using a root mean square point to point distance metric minimization technique which will best align each source point to its match found in the previous step. This step may also involve weighting points and rejecting outliers prior to alignment.
+	\item Transform the source points using the obtained transformation.
+	\item Iterate (re-associate the points, and so on).
+\end{enumerate}}
+\end{frame}
 
+%----------------------------------------------------------------------
 
+\begin{frame}{Merging point clouds}
 
+\begin{columns}
+	\begin{column}{0.5\textwidth}
+				\begin{center}
+Fig \ref{merge}   Intermediate merged pointclouds (left) and final point cloud (right). Denoised and downsampled version of final point cloud (bottom).
+		\end{center}
+	\end{column}
+	\begin{column}{0.8\textwidth}  %%<--- here
+		\begin{center}
+			\begin{figure}
+					\includegraphics[width=0.6\linewidth]{Figures/merge_h.eps}
+				\label{merge}
+				\caption{The merging procedure}
+			\end{figure}
 
-
-
-
+		\end{center}
+	\end{column}
+\end{columns}
 
 
 \end{frame}
+%----------------------------------------------------------------------
 
 
 \begin{frame}{Curve fitting with Linear Interpolation}
 
+\begin{columns}
+	\begin{column}{0.5\textwidth}
+		\begin{center}
+Using MATLAB's Curve Fitting Toolbox, we managed to 
+\begin{itemize}
+	\item Fit a polynomial surface
+	\item Step 2: Use a nearest neighbours approach with a predefined threshold to remove more outliers. 
+\end{itemize}
+
+Resulted point clouds were found to be \textbf{95\%} correctly denoised via simple parameter tuning.
+		\end{center}
+	\end{column}
+	\begin{column}{0.9\textwidth}  %%<--- here
+		\begin{center}
+			\begin{figure}
+				\includegraphics[width=0.3\linewidth]{Figures/FitA}
+				\label{fitA}
+				\caption{A simple curve fitting}
+			\end{figure}
+			\begin{figure}
+				\includegraphics[width=0.5\linewidth]{Figures/meshlab}
+				\label{meshlab}
+				\caption{A full fitted surface}
+			\end{figure}
+			
+		\end{center}
+	\end{column}
+\end{columns}
+
+\end{frame}
+
+%----------------------------------------------------------------------
+
+\begin{frame}{Integration -  Keep it simple scientist}
+\begin{columns}
+\begin{column}{0.5\textwidth}  %%<--- here
+	\begin{center}
+	\begin{equation}
+	\iiint_V f(x,y,z) \,dx\,dy\,dz 
+	\end{equation}
+	\begin{figure}
+		\includegraphics[width=0.5\linewidth]{Figures/meshlab}
+		\label{meshlab}
+		\caption{A full fitted surface}
+	\end{figure}
+	\end{center}
+\end{column}
+\begin{column}{0.5\textwidth}  %%<--- here
+	\begin{center}
+		\begin{equation}
+		\iiint_V f(x,y,z) \,dx\,dy\,dz 
+		\end{equation}
+		\begin{figure}
+			\includegraphics[width=0.5\linewidth]{Figures/arch}
+			\label{arch}
+			\caption{Pre-Calculus of Archimedes}
+		\end{figure}
+	\end{center}
+\end{column}
+\end{columns}
 
 
 
 \end{frame}
 
-
-
-\begin{frame}{Integration}
-\begin{equation}
-\iiint_V f(x,y,z) \,dx\,dy\,dz 
-\end{equation}
-
-\end{frame}
-
-
+%----------------------------------------------------------------------
 \begin{frame}{Results}
 
 \end{frame}
+
+
+%----------------------------------------------------------------------
+
 
 \begin{frame}{References}
 
