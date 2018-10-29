@@ -194,10 +194,9 @@ The Realsense $D435$ has been proved to be the best choice.
 	\item \textbf{+ } Relatively cheap.
 	
 	\item \textbf{+ } Independent from lighting conditions. 
-	
-	\item \textbf{- } Not providing Real Time Information (External setup). ????? 
-	
-	\item \textbf{- } Still expensive++++.	
+		
+	\item \textbf{-} Still expensive but...
+	\item \textbf{+ } ...can be used in multiple vans!	
 \end{itemize}
 
 
@@ -216,7 +215,7 @@ The Realsense $D435$ has been proved to be the best choice.
 Using the RealSense SDK, a piece of software has been written to automatise the process of extracting pointclouds from different points of view 
 
 \begin{figure}	
-\includegraphics[width=0.6\textwidth]{Figures/Resear10.jpg}
+\includegraphics[width=0.8\textwidth]{Figures/Resear10.jpg}
 % \caption{Software Activity Flow}
 \label{fig:Reco}
 \end{figure}
@@ -248,19 +247,6 @@ Using the RealSense SDK, a piece of software has been written to automatise the 
 \end{frame}
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 %\subsection{Subsection Example} % A subsection can be created just before a set of slides with a common theme to further break down your presentation into chunks
 
 
@@ -273,7 +259,11 @@ Extracted point clouds are often very noisy, so, a need for removing outliers is
 \end{itemize}
 
 Resulted point clouds were found to be \textbf{95\%} correctly denoised via simple parameter tuning.
-
+\begin{figure}
+	\includegraphics[width=0.6\linewidth]{Figures/noisy}
+	\label{noisy}
+	\caption{A noisy point cloud.}
+\end{figure} 
 
 
 \end{frame}
@@ -303,9 +293,11 @@ For each point in the source point cloud, match the closest point in the referen
 1st  step: 4 to 2\\
 2nd step: 2 to 1\\
 
-\begin{itemize}
-	\item aaaaa
-\end{itemize}
+\begin{figure}
+	\includegraphics[width=0.8\linewidth]{Figures/depth02.png}
+	\label{depth02}
+	\caption{ After merging.}
+\end{figure}
 
 	%	\end{center}
 	\end{column}
@@ -348,9 +340,9 @@ Resulted point clouds were found to be \textbf{95\%} correctly denoised via simp
 				\caption{A simple curve fitting}
 			\end{figure}
 			\begin{figure}
-				\includegraphics[width=0.6\linewidth]{Figures/meshlab}
-				\label{meshlab}
-				\caption{A full fitted surface}
+				\includegraphics[width=0.5\linewidth]{Figures/interp}
+				\label{interp}
+				\caption{Linear interpolation}
 			\end{figure}
 			
 		\end{center}
@@ -368,22 +360,32 @@ Resulted point clouds were found to be \textbf{95\%} correctly denoised via simp
 	\begin{equation}
 	\iiint_V f(x,y,z) \,dx\,dy\,dz 
 	\end{equation}
-	\begin{figure}
-		\includegraphics[width=0.5\linewidth]{Figures/meshlab}
-		\label{meshlab}
-		\caption{A full fitted surface}
-	\end{figure}
+	
+	\animategraphics[loop,controls,width=0.7\linewidth]{4}{Figures/gif/sweep-}{0}{32}
+		
+	
+	%\begin{figure}
+	%	\includegraphics[width=0.5\linewidth]{Figures/meshlab}
+	%	\label{meshlab1}
+	%	\caption{A full fitted surface}
+	%\end{figure}
 	\end{center}
 \end{column}
 \begin{column}{0.5\textwidth}  %%<--- here
 	\begin{center}
-		\begin{equation}
-		\iiint_V f(x,y,z) \,dx\,dy\,dz 
-		\end{equation}
+	%	\begin{equation}
+	%	\iiint_V f(x,y,z) \,dx\,dy\,dz 
+	%	\end{equation}
+\begin{figure}
+	\includegraphics[width=0.75\linewidth]{Figures/meshlab}
+	\label{meshlab2}
+	\caption{A full curve fitted surface}
+\end{figure}
+
 		\begin{figure}
-			\includegraphics[width=0.5\linewidth]{Figures/arch}
-			\label{arch}
-			\caption{Pre-Calculus of Archimedes}
+			\includegraphics[width=0.75\linewidth]{Figures/curvature00}
+			\label{curv}
+			\caption{Curvature of the surface}
 		\end{figure}
 	\end{center}
 \end{column}
@@ -395,6 +397,12 @@ Resulted point clouds were found to be \textbf{95\%} correctly denoised via simp
 
 %----------------------------------------------------------------------
 \begin{frame}{Results}
+
+
+
+
+
+
 
 \end{frame}
 
