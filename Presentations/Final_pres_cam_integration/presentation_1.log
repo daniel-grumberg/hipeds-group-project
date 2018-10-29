@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99998 (TeX Live 2017/Debian) (preloaded format=xelatex 2018.10.24)  26 OCT 2018 19:07
+This is XeTeX, Version 3.14159265-2.6-0.99998 (TeX Live 2017/Debian) (preloaded format=xelatex 2018.10.24)  29 OCT 2018 16:50
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1151,13 +1151,20 @@ Overfull \hbox (354.41193pt too wide) has occurred while \output is active
 [7
 
 ]
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.252 \end{frame}
+                 
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
 File: Figures/merge_h.eps Graphic file (type eps)
 <Figures/merge_h.eps>
-
-Overfull \hbox (35.2824pt too wide) detected at line 244
-[][][] $[]$[][][][][][][][] $[]$[][][][][][] 
- []
-
 
 Overfull \hbox (354.41193pt too wide) has occurred while \output is active
  [][]  
@@ -1171,12 +1178,7 @@ File: Figures/FitA.png Graphic file (type bmp)
 File: Figures/meshlab.png Graphic file (type bmp)
 <Figures/meshlab.png>
 
-Overfull \hbox (66.00858pt too wide) detected at line 279
-[][][] $[]$[][][][][][][][] $[]$[][][][][][] 
- []
-
-
-Overfull \vbox (6.30733pt too high) detected at line 279
+Overfull \vbox (9.08656pt too high) detected at line 287
  []
 
 
@@ -1229,11 +1231,11 @@ Overfull \hbox (354.41193pt too wide) has occurred while \output is active
 \tf@snm=\write8
 \openout8 = `presentation_1.snm'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 343.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 343.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 351.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 351.
  (./presentation_1.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 343.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 343.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 351.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 351.
 
 
 LaTeX Warning: There were multiply-defined labels.
@@ -1242,10 +1244,10 @@ LaTeX Warning: There were multiply-defined labels.
 Here is how much of TeX's memory you used:
  28919 strings out of 493007
  543259 string characters out of 6136718
- 608304 words of memory out of 5000000
+ 608313 words of memory out of 5000000
  32421 multiletter control sequences out of 15000+600000
  536350 words of font info for 60 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 56i,15n,57p,10578b,785s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 56i,15n,57p,10587b,785s stack positions out of 5000i,500n,10000p,200000b,80000s
 
 Output written on presentation_1.pdf (13 pages).

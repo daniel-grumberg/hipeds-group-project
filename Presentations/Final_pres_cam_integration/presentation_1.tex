@@ -82,14 +82,14 @@
 %----------------------------------------------------------------------------------------
 %	TITLE PAGE
 %----------------------------------------------------------------------------------------
-\title[Short title]{Volume estimation via integrating on a curve fitted point cloud} % The short title appears at the bottom of every slide, the full title is only on the title page
+\title[HiPEDS group project]{Volume estimation via integrating on a curve fitted point cloud} % The short title appears at the bottom of every slide, the full title is only on the title page
 
 \author{\textbf{HiPEDS 2018 Cohort:} G. Bisbas, L. Castiglione, D. Grumberg, S. Karolčík, L. Keeble, D. Kulon, B. Kwan, C. McMeel, R. Miles, J. Ortiz, N. Perez-Nieves, V. Pham Ngoc, J. Vandebon, D. Vink} % Your name
 \institute[Imperial College London] % Your institution as it will appear on the bottom of every slide, may be shorthand to save space
 { Imperial College London \\
 	
 	
-		\begin{tabular}{ccc}
+	\begin{tabular}{ccc}
 		\includegraphics[width=2cm]{Figures/royalmail} &
 		\includegraphics[width=3.5cm]{Figures/epsrc} &
 		\includegraphics[width=5cm]{Figures/imperial}
@@ -224,16 +224,24 @@ For each point in the source point cloud, match the closest point in the referen
 
 \begin{columns}
 	\begin{column}{0.5\textwidth}
-				\begin{center}
-Fig \ref{merge}   Intermediate merged pointclouds (left) and final point cloud (right). Denoised and downsampled version of final point cloud (bottom).
-		\end{center}
+	%	\begin{center}
+\textbf{Merging procedure:} 2 steps\\
+
+1st  step: 4 to 2\\
+2nd step: 2 to 1\\
+
+\begin{itemize}
+	
+\end{itemize}
+
+	%	\end{center}
 	\end{column}
-	\begin{column}{0.8\textwidth}  %%<--- here
+	\begin{column}{0.6\textwidth}  %%<--- here
 		\begin{center}
 			\begin{figure}
-					\includegraphics[width=0.6\linewidth]{Figures/merge_h.eps}
+				\includegraphics[width=0.8\linewidth]{Figures/merge_h.eps}
 				\label{merge}
-				\caption{The merging procedure}
+				\caption{ Intermediate merged pointclouds (left) and final point cloud (right). Denoised and downsampled version of final point cloud (bottom).}
 			\end{figure}
 
 		\end{center}
@@ -248,8 +256,8 @@ Fig \ref{merge}   Intermediate merged pointclouds (left) and final point cloud (
 \begin{frame}{Curve fitting with Linear Interpolation}
 
 \begin{columns}
-	\begin{column}{0.5\textwidth}
-		\begin{center}
+	\begin{column}{0.49\textwidth}
+		%\begin{left}
 Using MATLAB's Curve Fitting Toolbox, we managed to 
 \begin{itemize}
 	\item Fit a polynomial surface
@@ -257,17 +265,17 @@ Using MATLAB's Curve Fitting Toolbox, we managed to
 \end{itemize}
 
 Resulted point clouds were found to be \textbf{95\%} correctly denoised via simple parameter tuning.
-		\end{center}
+		%\end{left}
 	\end{column}
-	\begin{column}{0.9\textwidth}  %%<--- here
+	\begin{column}{0.6\textwidth}  %%<--- here
 		\begin{center}
 			\begin{figure}
-				\includegraphics[width=0.3\linewidth]{Figures/FitA}
+				\includegraphics[width=0.6\linewidth]{Figures/FitA}
 				\label{fitA}
 				\caption{A simple curve fitting}
 			\end{figure}
 			\begin{figure}
-				\includegraphics[width=0.5\linewidth]{Figures/meshlab}
+				\includegraphics[width=0.6\linewidth]{Figures/meshlab}
 				\label{meshlab}
 				\caption{A full fitted surface}
 			\end{figure}
