@@ -1,6 +1,8 @@
 \beamer@slide {vans}{3}
-\beamer@slide {merge}{8}
-\beamer@slide {fitA}{9}
-\beamer@slide {meshlab}{9}
-\beamer@slide {meshlab}{10}
-\beamer@slide {arch}{10}
+\beamer@slide {fig:Reco}{5}
+\beamer@slide {fig:ActivityFlow}{6}
+\beamer@slide {merge}{10}
+\beamer@slide {fitA}{11}
+\beamer@slide {meshlab}{11}
+\beamer@slide {meshlab}{12}
+\beamer@slide {arch}{12}

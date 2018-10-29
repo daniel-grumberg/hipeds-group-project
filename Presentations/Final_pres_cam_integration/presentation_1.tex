@@ -79,6 +79,7 @@
 \usepackage{graphicx} % Allows including images
 \usepackage{booktabs} % Allows the use of \toprule, \midrule and \bottomrule in tables
 \usepackage{animate}
+\usepackage{subfigure}
 %----------------------------------------------------------------------------------------
 %	TITLE PAGE
 %----------------------------------------------------------------------------------------
@@ -156,16 +157,48 @@
 \end{frame}
 
 
+%\begin{frame}
+%\frametitle{The hardware - Choosing the camera fitting our needs best} % Table of contents slide, comment this block out to remove it
+%\tableofcontents % Throughout your presentation, if you choose to use \section{} and \subsection{} commands, these will automatically be printed on this slide as an overview of your presentation
+
+%Three (3) cameras were considered. Pros and cons of each were weighted and the group ended up choosing Intel RealSense D435.
+
+%\includegraphics[width = 2cm]{Figures/Realsense1}
+%\includegraphics[width = 4cm]{Figures/intel2} \hspace{1cm}
+%\includegraphics[width = 3cm]{Figures/ZED} \hspace{2cm}
+%\\ Intel Realsense SR$300$ is better for indoor locations due to infrared light while Zed Stereo Camera is better for outdoors. Our experiments using both of them, reassured this notion. After excluding the camera that didn't work, we settled on the Realsense $D435$ due to its superior price point and lack of dependence on environmental factors.
+
+
+%\begin{figure}	
+%	\includegraphics[width=0.8\textwidth]{Figures/PID.png}
+%	\caption{PID controller}
+%	\label{pid}
+%\end{figure}
+
+
+%\end{frame}
+
+
 \begin{frame}
 \frametitle{The hardware - Choosing the camera fitting our needs best} % Table of contents slide, comment this block out to remove it
 %\tableofcontents % Throughout your presentation, if you choose to use \section{} and \subsection{} commands, these will automatically be printed on this slide as an overview of your presentation
 
-Three (3) cameras were considered. Pros and cons of each were weighted and the group ended up choosing Intel RealSense D435.
+% Three (3) cameras have been considered. Pros and cons of each have been weighted and the group ended up choosing Intel RealSense D435.
 
 \includegraphics[width = 2cm]{Figures/Realsense1}
 \includegraphics[width = 4cm]{Figures/intel2} \hspace{1cm}
 \includegraphics[width = 3cm]{Figures/ZED} \hspace{2cm}
-\\ Intel Realsense SR$300$ is better for indoor locations due to infrared light while Zed Stereo Camera is better for outdoors. Our experiments using both of them, reassured this notion. After excluding the camera that didn't work, we settled on the Realsense $D435$ due to its superior price point and lack of dependence on environmental factors.
+\\ %Intel Realsense SR$300$ is better for indoor locations due to infrared light while Zed Stereo Camera is better for outdoors. Our experiments using both of them, reassured this notion. After excluding the camera that didn't work, 
+The Realsense $D435$ has been proved to be the best choice.
+\begin{itemize}
+	\item \textbf{+ } Relatively cheap.
+	
+	\item \textbf{+ } Independent from lighting conditions. 
+	
+	\item \textbf{- } Not providing Real Time Information (External setup). ????? 
+	
+	\item \textbf{- } Still expensive++++.	
+\end{itemize}
 
 
 %\begin{figure}	
@@ -178,18 +211,58 @@ Three (3) cameras were considered. Pros and cons of each were weighted and the g
 \end{frame}
 %\subsection{Subsection Example} % A subsection can be created just before a set of slides with a common theme to further break down your presentation into chunks
 
-\begin{frame}\frametitle{Extracting the point cloud}
+\begin{frame}\frametitle{Extracting the point cloud: PLYExtractor}
 
-Luca here you go : Add photos and something about your code
+Using the RealSense SDK, a piece of software has been written to automatise the process of extracting pointclouds from different points of view 
 
-\begin{itemize}
-	\item 
-	\item  
-	\item 
-\end{itemize}
+\begin{figure}	
+\includegraphics[width=0.6\textwidth]{Figures/Resear10.jpg}
+% \caption{Software Activity Flow}
+\label{fig:Reco}
+\end{figure}
+
+\end{frame}
+
+\begin{frame}\frametitle{PLYExtractor: Activity Flow}
+
+\begin{figure}	
+\includegraphics[width=0.27\textwidth]{Figures/ActvityFlow.PNG}
+\caption{Software Activity Flow}
+\label{fig:ActivityFlow}
+\end{figure}
 
 
 \end{frame}
+
+\begin{frame}\frametitle{PLYExtractor: in Action}
+
+\begin{figure}
+\hfill
+\subfigure[ ]{\includegraphics[width=5cm]{Figures/action2.jpg}}
+\hfill
+\subfigure[ ]{\includegraphics[width=5cm]{Figures/action1.jpg}}
+\hfill
+\end{figure}
+
+
+\end{frame}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+%\subsection{Subsection Example} % A subsection can be created just before a set of slides with a common theme to further break down your presentation into chunks
+
 
 \begin{frame}{Denoising the point cloud}
 Extracted point clouds are often very noisy, so, a need for removing outliers is needed.
@@ -231,7 +304,7 @@ For each point in the source point cloud, match the closest point in the referen
 2nd step: 2 to 1\\
 
 \begin{itemize}
-	
+	\item aaaaa
 \end{itemize}
 
 	%	\end{center}
