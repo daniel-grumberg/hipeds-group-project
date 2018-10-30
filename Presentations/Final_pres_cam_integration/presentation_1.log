@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99998 (TeX Live 2017/Debian) (preloaded format=xelatex 2018.10.24)  30 OCT 2018 10:34
+This is XeTeX, Version 3.14159265-2.6-0.99998 (TeX Live 2017/Debian) (preloaded format=xelatex 2018.10.24)  30 OCT 2018 11:13
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1110,8 +1110,12 @@ Overfull \hbox (354.41193pt too wide) has occurred while \output is active
 [1
 
 ]
+File: Figures/royal_vans.png Graphic file (type bmp)
+<Figures/royal_vans.png>
+LaTeX Font Info:    Font shape `TU/lmss/m/it' in size <10> not available
+(Font)              Font shape `TU/lmss/m/sl' tried instead on input line 132.
 LaTeX Font Info:    Font shape `TU/lmss/m/it' in size <10.95> not available
-(Font)              Font shape `TU/lmss/m/sl' tried instead on input line 138.
+(Font)              Font shape `TU/lmss/m/sl' tried instead on input line 132.
 
 Overfull \hbox (354.41193pt too wide) has occurred while \output is active
  [][]  
@@ -1120,11 +1124,6 @@ Overfull \hbox (354.41193pt too wide) has occurred while \output is active
 [2
 
 ]
-File: Figures/royal_vans.png Graphic file (type bmp)
-<Figures/royal_vans.png>
-LaTeX Font Info:    Font shape `TU/lmss/m/it' in size <10> not available
-(Font)              Font shape `TU/lmss/m/sl' tried instead on input line 157.
-
 Overfull \hbox (354.41193pt too wide) has occurred while \output is active
  [][]  
  []
@@ -1181,7 +1180,7 @@ Overfull \hbox (354.41193pt too wide) has occurred while \output is active
 File: Figures/noisy.png Graphic file (type bmp)
 <Figures/noisy.png>
 
-Overfull \vbox (11.58997pt too high) detected at line 269
+Overfull \vbox (11.58997pt too high) detected at line 274
  []
 
 
@@ -1216,7 +1215,7 @@ File: Figures/FitA.png Graphic file (type bmp)
 File: Figures/interp.png Graphic file (type bmp)
 <Figures/interp.png>
 
-Overfull \vbox (6.36032pt too high) detected at line 352
+Overfull \vbox (6.36032pt too high) detected at line 357
  []
 
 
@@ -1335,7 +1334,7 @@ File: Figures/meshlab.png Graphic file (type bmp)
 File: Figures/curvature00.png Graphic file (type bmp)
 <Figures/curvature00.png>
 
-Overfull \vbox (7.74289pt too high) detected at line 396
+Overfull \vbox (7.74289pt too high) detected at line 401
  []
 
 
@@ -1359,7 +1358,7 @@ Overfull \hbox (354.41193pt too wide) has occurred while \output is active
 File: Figures/chart2.png Graphic file (type bmp)
 <Figures/chart2.png>
 
-Overfull \vbox (5.87524pt too high) detected at line 415
+Overfull \vbox (5.87524pt too high) detected at line 420
  []
 
 
@@ -1405,7 +1404,7 @@ File: Figures/epsrc.jpg Graphic file (type bmp)
 File: Figures/imperial.png Graphic file (type bmp)
 <Figures/imperial.png>
 
-Overfull \hbox (27.46405pt too wide) in paragraph at lines 482--482
+Overfull \hbox (27.46405pt too wide) in paragraph at lines 487--487
 [][]  
  []
 
@@ -1426,11 +1425,11 @@ Overfull \hbox (354.41193pt too wide) has occurred while \output is active
 \tf@snm=\write8
 \openout8 = `presentation_1.snm'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 486.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 486.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 491.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 491.
  (./presentation_1.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 486.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 486.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 491.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 491.
  ) 
 Here is how much of TeX's memory you used:
  29419 strings out of 493007
