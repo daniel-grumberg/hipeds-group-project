@@ -1,11 +1,11 @@
-This is XeTeX, Version 3.14159265-2.6-0.99998 (TeX Live 2017/Debian) (preloaded format=xelatex 2018.10.24)  29 OCT 2018 23:45
+This is XeTeX, Version 3.14159265-2.6-0.99998 (TeX Live 2017/Debian) (preloaded format=xelatex 2018.10.24)  30 OCT 2018 10:34
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
 **presentation_1.tex
 (./presentation_1.tex
 LaTeX2e <2017-04-15>
-Babel <3.18> and hyphenation patterns for 62 language(s) loaded.
+Babel <3.18> and hyphenation patterns for 84 language(s) loaded.
 (/usr/share/texlive/texmf-dist/tex/latex/beamer/beamer.cls
 Document Class: beamer 2018/02/20 v3.50 A class for typesetting presentations
 (/usr/share/texlive/texmf-dist/tex/latex/beamer/beamerbasemodes.sty
@@ -1346,6 +1346,9 @@ Overfull \hbox (354.41193pt too wide) has occurred while \output is active
 [12
 
 ]
+File: Figures/chart1.png Graphic file (type bmp)
+<Figures/chart1.png>
+
 Overfull \hbox (354.41193pt too wide) has occurred while \output is active
  [][]  
  []
@@ -1353,6 +1356,13 @@ Overfull \hbox (354.41193pt too wide) has occurred while \output is active
 [13
 
 ]
+File: Figures/chart2.png Graphic file (type bmp)
+<Figures/chart2.png>
+
+Overfull \vbox (5.87524pt too high) detected at line 415
+ []
+
+
 Overfull \hbox (354.41193pt too wide) has occurred while \output is active
  [][]  
  []
@@ -1367,6 +1377,46 @@ Overfull \hbox (354.41193pt too wide) has occurred while \output is active
 [15
 
 ]
+Overfull \hbox (354.41193pt too wide) has occurred while \output is active
+ [][]  
+ []
+
+[16
+
+]
+Overfull \hbox (354.41193pt too wide) has occurred while \output is active
+ [][]  
+ []
+
+[17
+
+]
+Overfull \hbox (354.41193pt too wide) has occurred while \output is active
+ [][]  
+ []
+
+[18
+
+]
+File: Figures/royalmail.png Graphic file (type bmp)
+<Figures/royalmail.png>
+File: Figures/epsrc.jpg Graphic file (type bmp)
+<Figures/epsrc.jpg>
+File: Figures/imperial.png Graphic file (type bmp)
+<Figures/imperial.png>
+
+Overfull \hbox (27.46405pt too wide) in paragraph at lines 482--482
+[][]  
+ []
+
+
+Overfull \hbox (354.41193pt too wide) has occurred while \output is active
+ [][]  
+ []
+
+[19
+
+]
 \tf@nav=\write6
 \openout6 = `presentation_1.nav'.
 
@@ -1376,19 +1426,19 @@ Overfull \hbox (354.41193pt too wide) has occurred while \output is active
 \tf@snm=\write8
 \openout8 = `presentation_1.snm'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 432.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 432.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 486.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 486.
  (./presentation_1.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 432.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 432.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 486.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 486.
  ) 
 Here is how much of TeX's memory you used:
- 29401 strings out of 493422
- 552099 string characters out of 6147085
- 647346 words of memory out of 5000000
- 32821 multiletter control sequences out of 15000+600000
+ 29419 strings out of 493007
+ 552327 string characters out of 6136718
+ 648963 words of memory out of 5000000
+ 32867 multiletter control sequences out of 15000+600000
  536358 words of font info for 61 fonts, out of 8000000 for 9000
- 1098 hyphenation exceptions out of 8191
+ 1348 hyphenation exceptions out of 8191
  56i,15n,63p,10419b,785s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on presentation_1.pdf (15 pages).
+Output written on presentation_1.pdf (19 pages).
