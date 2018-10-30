@@ -396,24 +396,73 @@ Resulted point clouds were found to be \textbf{95\%} correctly denoised via simp
 \end{frame}
 
 %----------------------------------------------------------------------
-\begin{frame}{Results}
+\begin{frame}{Results-1}
+
+\begin{figure}
+	\includegraphics[width=0.95\linewidth]{Figures/chart1}
+	\label{ch1}
+	\caption{Comparison of ordered and disordered setups with the real occupied volume}
+\end{figure}
+\end{frame}
 
 
+\begin{frame}{Results-2}
+\begin{figure}
+	\includegraphics[width=0.9\linewidth]{Figures/chart2}
+	\label{ch2}
+	\caption{Worst case scenario differences}
+\end{figure}
+\end{frame}
 
-
+\begin{frame}{Conclusion-Our proposal}
+\begin{itemize}
+	\item 1 camera needs 10 seconds in every van - Up to 6 vans per minute sequentially.
+	\item Occupied volume prediction in less than 45 seconds for every van.
+	\item 3\% - 4\% error in 85\% of cases - Worst case scenario errors up to 11\%.
+	\item With less than 200gbp we should be able to calculate the volume of 100 vans in less than 20 minutes, a second camera ... 200 vans...etc...
+	\item Not real time but requirements met.
+	\item Simplicity - No installments
+	\item Only external use
+	\item Easy to transfer hardware
+	\item Solution ready to be tested as soon as possible
+\end{itemize}
 
 
 
 \end{frame}
+
+\begin{frame}{Things to consider}
+
+\begin{itemize}
+	\item Time limitations
+	\item Manual Procedure
+	\item Free software to reduce cost?
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Future extensions}
+
+\begin{itemize}
+	\item Depth picture quality
+	\item Faster calculations
+	\item Camera price trends
+\end{itemize}
+\end{frame}
+
 
 
 %----------------------------------------------------------------------
 
 
 \begin{frame}{References}
-
-
-
+\begin{enumerate}
+	\item Z. Zhang, “Iterative point matching for registration of free-form curves and surfaces,” Int. J. Comput. Vis., 1994.
+	\item E. Johnson and M. Hebert, “Surface registration by matching oriented points,” Proceedings. Int. Conf. Recent Adv. 3-D Digit. Imaging Model. (Cat. No.97TB100134), 1997.
+	\item  P. Besl and N. McKay, “A Method for Registration of 3-D Shapes,” Tpami, 1992.
+	\item M. Kazhdan and H. Hoppe, “Screened poisson surface reconstruction,” ACM Trans. Graph., vol. 32, no. 3, pp. 1–13, 2013.
+	\item N. Amenta, S. Choi, and R. K. Kolluri, “The power crust,” Proc. sixth ACM Symp. Solid Model. Appl. - SMA ’01, pp. 249–266, 2001.
+	\item M. Kazhdan, M. Bolitho, and H. Hoppe, “Poisson Surface Reconstruction,” Proc. Symp. Geom. Process., pp. 61–70, 2006.
+\end{enumerate}
 \end{frame}
 
 %------------------------------------------------
@@ -424,7 +473,7 @@ Resulted point clouds were found to be \textbf{95\%} correctly denoised via simp
 %------------------------------------------------
 
 \begin{frame}{Acknowledgements}
-This project was proposed and supported by Royal Mail, EPSRC and Imperial College London. A special thanks to Jeremy Bradley and Ben Glocker for their support and advice throughout.
+This project was proposed and supported by Royal Mail, EPSRC and Imperial College London. We would like to than all the HiPEDS 1st year PhD students for their cooperation and a special thanks to Jeremy Bradley and Ben Glocker for their support and advice throughout.
 \end{frame}
 
 %----------------------------------------------------------------------------------------
