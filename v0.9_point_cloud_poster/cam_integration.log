@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99998 (TeX Live 2017/Debian) (preloaded format=xelatex 2018.10.24)  29 OCT 2018 10:27
+This is XeTeX, Version 3.14159265-2.6-0.99998 (TeX Live 2017/Debian) (preloaded format=xelatex 2018.10.24)  5 NOV 2018 13:22
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -739,8 +739,8 @@ Underfull \hbox (badness 10000) in paragraph at lines 160--160
 Missing character: There is no ; in font nullfont!
 Missing character: There is no ; in font nullfont!
 Missing character: There is no ; in font nullfont!
-File: figures/merge_h.eps Graphic file (type eps)
-<figures/merge_h.eps>
+File: figures/final_poster.png Graphic file (type bmp)
+<figures/final_poster.png>
 
 Underfull \hbox (badness 10000) in paragraph at lines 202--202
 
@@ -774,9 +774,9 @@ Overfull \hbox (2.22221pt too wide) in paragraph at lines 83--219
 (\end occurred when \ifx on line 161 was incomplete) 
 Here is how much of TeX's memory you used:
  15432 strings out of 493007
- 324589 string characters out of 6136718
- 402851 words of memory out of 5000000
- 19078 multiletter control sequences out of 15000+600000
+ 324624 string characters out of 6136718
+ 402884 words of memory out of 5000000
+ 19079 multiletter control sequences out of 15000+600000
  33512 words of font info for 26 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  62i,10n,92p,471b,956s stack positions out of 5000i,500n,10000p,200000b,80000s
